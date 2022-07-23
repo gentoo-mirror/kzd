@@ -13,7 +13,8 @@ inherit distutils-r1 eutils git-r3 desktop
 DESCRIPTION="Open multi-site list manager for media tracking sites"
 HOMEPAGE="https://github.com/z411/trackma"
 EGIT_REPO_URI="https://github.com/z411/${PN}"
-EDIT_COMMIT="v${PV}"
+# Seems to not be working properly; Keeps grabbing 0.8.3 based on About readout in the software, theme is also broken?
+EGIT_COMMIT="v${PV}"
 LICENSE="GPL-3"
 SLOT="0"
 IUSE="+ncurses cli gtk inotify qt5"
