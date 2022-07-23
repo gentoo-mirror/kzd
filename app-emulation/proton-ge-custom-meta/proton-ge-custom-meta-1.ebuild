@@ -1,5 +1,6 @@
 # Copyright 2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
+# taken from ebuild in the touchfish-os overlay
 
 EAPI=8
 
