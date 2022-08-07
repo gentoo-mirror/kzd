@@ -3,24 +3,24 @@
 # modified from ebuild available in the touchfish-os overlay
 
 EAPI=8
+MULTILIB_COMPAT=(abi_x86_{32,64})
+inherit multilib-minimal
 
 _internal_name=GE-Proton${PV/./-}
 DESCRIPTION="A fancy custom distribution of Valves Proton with various patches"
 HOMEPAGE="https://github.com/GloriousEggroll/proton-ge-custom"
 SRC_URI="https://github.com/GloriousEggroll/proton-ge-custom/releases/download/${_internal_name}/${_internal_name}.tar.gz -> ${P}.tar.gz"
-
 LICENSE="BSD LGPL zlib MIT MPL OFL Proton"
 SLOT="${PV}"
 KEYWORDS="~amd64"
 RESTRICT="mirror strip"
 
 RDEPEND="
-	media-libs/mesa[vulkan,abi_x86_32]
-	media-libs/vulkan-loader[abi_x86_32]"
+	media-libs/mesa[vulkan,${MULTILIB_USEDEP}]
+	media-libs/vulkan-loader[${MULTILIB_USEDEP}]"
 
-QA_PREBUILT="*"
+QA_PREBUILT={*}
 S="${WORKDIR}"
-#PATCHES=("${FILESDIR}/proton-ge-custom-bin-7.26-create-dosdevices.patch")
 
 src_install() {
 	dodir "/usr/share/steam/compatibilitytools.d/${_internal_name}"
