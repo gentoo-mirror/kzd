@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DESCRIPTION=A fancy custom distribution of Valves Proton with various patches
+EAPI=8
+HOMEPAGE=https://github.com/GloriousEggroll/proton-ge-custom
+KEYWORDS=~amd64
+LICENSE=BSD LGPL zlib MIT MPL OFL Proton
+RDEPEND=media-libs/mesa[vulkan,abi_x86_32] media-libs/vulkan-loader[abi_x86_32]
+RESTRICT=mirror strip
+SLOT=7.29
+SRC_URI=https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton7-29/GE-Proton7-29.tar.gz -> proton-ge-custom-bin-7.29.tar.gz
+_md5_=b1ab19264c139f3f41b24c7b0d57b415
