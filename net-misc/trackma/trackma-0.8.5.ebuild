@@ -6,7 +6,7 @@ EAPI=7
 
 KEYWORDS="~amd64"
 
-PYTHON_COMPAT=( python3_{4..10} )
+PYTHON_COMPAT=( python3_{4..11} )
 
 inherit distutils-r1 eutils git-r3 desktop
 
