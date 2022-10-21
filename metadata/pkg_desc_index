@@ -1,4 +1,5 @@
 app-emulation/proton-ge-custom-bin 7.26 7.27 7.28 7.29 7.30 7.31 7.32 7.33 7.34 7.35 7.36 7.37: A fancy custom distribution of Valves Proton with various patches
 app-emulation/proton-ge-custom-meta 1: Meta package for proton-ge-custom-bin, make it easier to pull in dependencies
+games-action/polymc 1.4.2-r2 9999: A custom, open source Minecraft launcher
 media-sound/NoiseTorch 0.12.2: Real-time microphone noise suppression on Linux.
 net-misc/trackma 0.8.4 0.8.5 9999: Open multi-site list manager for media tracking sites

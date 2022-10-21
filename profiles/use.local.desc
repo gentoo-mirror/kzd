@@ -2,3 +2,5 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+games-action/polymc:lto - Enable link-time optimization
+games-action/polymc:qt6 - Build with Qt6 support instead of the default Qt5
