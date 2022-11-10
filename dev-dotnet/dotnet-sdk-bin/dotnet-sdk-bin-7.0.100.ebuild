@@ -15,7 +15,7 @@ arm? ( https://dotnetcli.azureedge.net/dotnet/Sdk/${MY_PV}/dotnet-sdk-${MY_PV}-l
 arm64? ( https://dotnetcli.azureedge.net/dotnet/Sdk/${MY_PV}/dotnet-sdk-${MY_PV}-linux-arm64.tar.gz )
 "
 
-SLOT="6.0"
+SLOT="7.0"
 KEYWORDS="~amd64 ~arm ~arm64"
 IUSE="+dotnet-symlink"
 REQUIRED_USE="elibc_glibc"
