@@ -7,6 +7,6 @@ mail-client/thunderbird 102.4.2-r1: Thunderbird Mail Client
 media-sound/NoiseTorch 0.12.2: Real-time microphone noise suppression on Linux.
 net-misc/trackma 0.8.4 0.8.5 9999: Open multi-site list manager for media tracking sites
 net-print/cnrdrvcups-sfp 5.00: Canon UFR II / LIPSLX Printer Driver for Linux (USA)
-sys-kernel/zen-sources 6.0.10_p2 6.0.11_p1: The Zen Kernel Live Sources
+sys-kernel/zen-sources 6.0.10_p2 6.0.11_p1 6.0.12_p1: The Zen Kernel Live Sources
 virtual/dotnet-sdk 7.0: Virtual for .NET SDK
 www-client/firefox 106.0.5-r1: Firefox Web Browser
