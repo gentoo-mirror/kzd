@@ -3,3 +3,6 @@
 
 # rust 1.65.0 produces unusable binary
 #=mail-client/thunderbird-102.4.2-r1
+
+# blender won't build without libdecor
+#=media-gfx/blender-3.4.0
