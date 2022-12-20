@@ -4,7 +4,7 @@ app-emulation/wine-ge-custom-bin 7.34 7.35: A fancy custom distribution of Wine 
 dev-dotnet/dotnet-sdk-bin 7.0.100: .NET is a free, cross-platform, open-source developer platform
 games-action/polymc 1.4.2-r2 9999: A custom, open source Minecraft launcher
 mail-client/thunderbird 102.4.2-r1: Thunderbird Mail Client
-media-gfx/blender 3.4.0_p1: 3D Creation/Animation/Publishing System
+media-gfx/blender 3.4.0: 3D Creation/Animation/Publishing System
 media-libs/openxr-loader 1.0.26: OpenXR loader
 media-sound/NoiseTorch 0.12.2: Real-time microphone noise suppression on Linux.
 net-misc/trackma 0.8.4 0.8.5 9999: Open multi-site list manager for media tracking sites
