@@ -8,6 +8,7 @@ mail-client/thunderbird 102.4.2-r1: Thunderbird Mail Client
 media-gfx/blender 3.4.0: 3D Creation/Animation/Publishing System
 media-libs/openxr-loader 1.0.26: OpenXR loader
 media-sound/NoiseTorch 0.12.2: Real-time microphone noise suppression on Linux.
+media-video/obs-studio 29.0.0: Software for Recording and Streaming Live Video Content
 media-video/obs-vkcapture 1.2.2: OBS Linux Vulkan/OpenGL game capture
 net-misc/trackma 0.8.4 0.8.5 9999: Open multi-site list manager for media tracking sites
 net-print/cnrdrvcups-sfp 5.00: Canon UFR II / LIPSLX Printer Driver for Linux (USA)

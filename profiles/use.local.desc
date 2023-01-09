@@ -27,3 +27,12 @@ media-gfx/blender:potrace - Add support for converting bitmaps into Grease penci
 media-gfx/blender:pugixml - Enable PugiXML support (Used for OpenImageIO, Grease Pencil SVG export)
 media-gfx/blender:tbb - Use threading building blocks library from dev-cpp/tbb.
 media-gfx/blender:valgrind - Add support for memory debugging using dev-util/valgrind
+media-video/obs-studio:browser - Enable browser source support via (precompiled) CEF.
+media-video/obs-studio:decklink - Build the Decklink plugin.
+media-video/obs-studio:fdk - Build with LibFDK AAC support.
+media-video/obs-studio:pipewire - Build with PipeWire support.
+media-video/obs-studio:python - Build with scripting support for Python 3.
+media-video/obs-studio:speex - Build with Speex noise suppression filter support.
+media-video/obs-studio:ssl - Build with TLS/SSL support for RTMPS connections.
+media-video/obs-studio:vlc - Build with VLC media source support.
+media-video/obs-studio:websocket - Build with WebSocket API support.
