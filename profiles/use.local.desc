@@ -27,6 +27,22 @@ media-gfx/blender:potrace - Add support for converting bitmaps into Grease penci
 media-gfx/blender:pugixml - Enable PugiXML support (Used for OpenImageIO, Grease Pencil SVG export)
 media-gfx/blender:tbb - Use threading building blocks library from dev-cpp/tbb.
 media-gfx/blender:valgrind - Add support for memory debugging using dev-util/valgrind
+media-libs/mesa:d3d9 - Enable Direct 3D9 API through Nine state tracker. Can be used together with patched wine.
+media-libs/mesa:gles1 - Enable GLESv1 support.
+media-libs/mesa:gles2 - Enable GLESv2 support.
+media-libs/mesa:llvm - Enable LLVM backend for Gallium3D.
+media-libs/mesa:lm-sensors - Enable Gallium HUD lm-sensors support.
+media-libs/mesa:opencl - Enable the Clover Gallium OpenCL state tracker.
+media-libs/mesa:osmesa - Build the Mesa library for off-screen rendering.
+media-libs/mesa:proprietary-codecs - Enable codecs for patent-encumbered audio and video formats.
+media-libs/mesa:valgrind - Compile in valgrind memory hints
+media-libs/mesa:vdpau - Enable the VDPAU acceleration interface for the Gallium3D Video Layer.
+media-libs/mesa:vulkan - Enable Vulkan drivers
+media-libs/mesa:vulkan-overlay - Build vulkan-overlay-layer which displays Frames Per Second and other statistics
+media-libs/mesa:wayland - Enable support for dev-libs/wayland
+media-libs/mesa:xa - Enable the XA (X Acceleration) API for Gallium3D.
+media-libs/mesa:xvmc - Enable the XvMC acceleration interface for the Gallium3D Video Layer.
+media-libs/mesa:zink - Enable the Zink OpenGL-over-Vulkan Gallium driver
 media-video/obs-studio:browser - Enable browser source support via (precompiled) CEF.
 media-video/obs-studio:decklink - Build the Decklink plugin.
 media-video/obs-studio:fdk - Build with LibFDK AAC support.
