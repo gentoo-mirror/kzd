@@ -2,6 +2,7 @@ app-emulation/proton-ge-custom-bin 7.26 7.27 7.28 7.29 7.30 7.31 7.32 7.33 7.34 
 app-emulation/proton-ge-custom-meta 1: Meta package for proton-ge-custom-bin, make it easier to pull in dependencies
 app-emulation/wine-ge-custom-bin 7.34 7.35: A fancy custom distribution of Wine with various patches
 dev-dotnet/dotnet-sdk-bin 7.0.100: .NET is a free, cross-platform, open-source developer platform
+dev-libs/mtxclient 0.9.0: Client API library for Matrix, built on top of libcurl
 games-action/polymc 1.4.2-r2 1.4.3 9999: A custom, open source Minecraft launcher
 gui-wm/gamescope 9999: Gamescope
 mail-client/thunderbird 102.4.2-r1: Thunderbird Mail Client
@@ -11,6 +12,7 @@ media-libs/openxr-loader 1.0.26: OpenXR loader
 media-sound/NoiseTorch 0.12.2: Real-time microphone noise suppression on Linux.
 media-video/obs-studio 29.0.0: Software for Recording and Streaming Live Video Content
 media-video/obs-vkcapture 1.2.2: OBS Linux Vulkan/OpenGL game capture
+net-im/nheko 0.11.0: Native desktop client for Matrix using Qt
 net-misc/trackma 0.8.4 0.8.5 9999: Open multi-site list manager for media tracking sites
 net-print/cnrdrvcups-sfp 5.00: Canon UFR II / LIPSLX Printer Driver for Linux (USA)
 sys-kernel/zen-sources 6.0.10_p2 6.0.11_p1 6.0.12_p1 6.1_p1 6.1.1_p1 6.1.2_p1 6.1.3_p1 6.1.4_p2 6.1.5_p1: The Zen Kernel Live Sources

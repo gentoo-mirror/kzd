@@ -52,3 +52,5 @@ media-video/obs-studio:speex - Build with Speex noise suppression filter support
 media-video/obs-studio:ssl - Build with TLS/SSL support for RTMPS connections.
 media-video/obs-studio:vlc - Build with VLC media source support.
 media-video/obs-studio:websocket - Build with WebSocket API support.
+net-im/nheko:video - Enables video calls
+net-im/nheko:voip - Enables audio calls
