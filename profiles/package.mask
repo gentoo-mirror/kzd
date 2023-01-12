@@ -6,3 +6,6 @@
 
 # blender won't build without libdecor
 #=media-gfx/blender-3.4.0
+
+# seems to possibly have issues with xrandr displays getting maxed out periodically
+=media-libs/mesa-22.3.3
