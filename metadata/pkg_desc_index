@@ -12,8 +12,8 @@ media-libs/mesa 22.3.3: OpenGL-like graphic library for Linux
 media-libs/openxr-loader 1.0.26: OpenXR loader
 media-sound/NoiseTorch 0.12.2: Real-time microphone noise suppression on Linux.
 media-video/obs-studio 29.0.0: Software for Recording and Streaming Live Video Content
-media-video/obs-vkcapture 1.2.2: OBS Linux Vulkan/OpenGL game capture
-net-im/nheko 0.11.0: Native desktop client for Matrix using Qt
+media-video/obs-vkcapture 1.2.2 1.3.0: OBS Linux Vulkan/OpenGL game capture
+net-im/nheko 0.11.0 0.11.1: Native desktop client for Matrix using Qt
 net-misc/trackma 0.8.4 0.8.5 9999: Open multi-site list manager for media tracking sites
 net-print/cnrdrvcups-sfp 5.00: Canon UFR II / LIPSLX Printer Driver for Linux (USA)
 sys-kernel/zen-sources 6.0.10_p2 6.0.11_p1 6.0.12_p1 6.1_p1 6.1.1_p1 6.1.2_p1 6.1.3_p1 6.1.4_p2 6.1.5_p1 6.1.5_p2 6.1.6_p1: The Zen Kernel Live Sources
