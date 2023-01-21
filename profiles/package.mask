@@ -11,3 +11,25 @@
 # actually due to Steam beta issue https://github.com/ValveSoftware/steam-for-linux/issues/9094
 # in main repos now
 =media-libs/mesa-22.3.3
+
+# proton-ge builds that received hotfixes after
+=app-emulation/proton-ge-custom-bin-7.1
+=app-emulation/proton-ge-custom-bin-7.2
+=app-emulation/proton-ge-custom-bin-7.3
+=app-emulation/proton-ge-custom-bin-7.6
+=app-emulation/proton-ge-custom-bin-7.7
+=app-emulation/proton-ge-custom-bin-7.11
+=app-emulation/proton-ge-custom-bin-7.12
+=app-emulation/proton-ge-custom-bin-7.13
+=app-emulation/proton-ge-custom-bin-7.16
+=app-emulation/proton-ge-custom-bin-7.17
+=app-emulation/proton-ge-custom-bin-7.19
+=app-emulation/proton-ge-custom-bin-7.21
+=app-emulation/proton-ge-custom-bin-7.22
+=app-emulation/proton-ge-custom-bin-7.23
+=app-emulation/proton-ge-custom-bin-7.34
+=app-emulation/proton-ge-custom-bin-7.36
+=app-emulation/proton-ge-custom-bin-7.39
+=app-emulation/proton-ge-custom-bin-7.40
+=app-emulation/proton-ge-custom-bin-7.45
+=app-emulation/proton-ge-custom-bin-7.46
