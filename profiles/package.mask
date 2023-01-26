@@ -7,11 +7,6 @@
 # blender won't build without libdecor
 #=media-gfx/blender-3.4.0
 
-# seems to possibly have issues with xrandr displays getting maxed out periodically
-# actually due to Steam beta issue https://github.com/ValveSoftware/steam-for-linux/issues/9094
-# in main repos now
-=media-libs/mesa-22.3.3
-
 # proton-ge builds that received hotfixes after
 =app-emulation/proton-ge-custom-bin-7.1
 =app-emulation/proton-ge-custom-bin-7.2
