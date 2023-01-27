@@ -6,6 +6,7 @@ dev-dotnet/dotnet-sdk-bin 7.0.100: .NET is a free, cross-platform, open-source d
 dev-libs/mtxclient 0.9.0 0.9.1: Client API library for Matrix, built on top of libcurl
 dev-libs/openvr 1.16.8: OpenVR is an API and runtime that allows access to VR hardware from multiple vendors without requiring that applications have specific knowledge of the hardware they are targeting.
 games-action/polymc 1.4.2-r2 1.4.3 9999: A custom, open source Minecraft launcher
+games-puzzle/vvvvvv 9999: Retro-styled 2D puzzle platformer (source-available release)
 gui-wm/gamescope 9999: Gamescope
 mail-client/thunderbird 102.4.2-r1: Thunderbird Mail Client
 media-gfx/blender 3.4.0: 3D Creation/Animation/Publishing System
