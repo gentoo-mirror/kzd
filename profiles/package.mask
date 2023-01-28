@@ -7,6 +7,9 @@
 # blender won't build without libdecor
 #=media-gfx/blender-3.4.0
 
+# gentoo repo has this now
+=app-emulation/wine-staging-8.0
+
 # proton-ge builds that received hotfixes after
 =app-emulation/proton-ge-custom-bin-7.1
 =app-emulation/proton-ge-custom-bin-7.2
