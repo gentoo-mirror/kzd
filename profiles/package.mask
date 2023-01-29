@@ -1,15 +1,3 @@
-# Tag fetch for git-r3 seems broken for this, not sure why. Gets 0.8.3 allegedly instead?
-#=net-misc/trackma-0.8.4
-
-# rust 1.65.0 produces unusable binary
-#=mail-client/thunderbird-102.4.2-r1
-
-# blender won't build without libdecor
-#=media-gfx/blender-3.4.0
-
-# gentoo repo has this now
-=app-emulation/wine-staging-8.0
-
 # proton-ge builds that received hotfixes after
 =app-emulation/proton-ge-custom-bin-7.1
 =app-emulation/proton-ge-custom-bin-7.2
