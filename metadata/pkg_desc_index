@@ -20,4 +20,4 @@ net-misc/trackma 0.8.4 0.8.5 9999: Open multi-site list manager for media tracki
 net-print/cnrdrvcups-sfp 5.00: Canon UFR II / LIPSLX Printer Driver for Linux (USA)
 sys-kernel/zen-sources 6.0.12_p1 6.1.7_p1 6.1.8_p1 6.1.9_p1: The Zen Kernel Live Sources
 virtual/dotnet-sdk 7.0: Virtual for .NET SDK
-www-client/firefox 106.0.5-r1: Firefox Web Browser
+www-client/firefox 109.0: Firefox Web Browser
