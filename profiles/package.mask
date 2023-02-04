@@ -19,3 +19,6 @@
 =app-emulation/proton-ge-custom-bin-7.40
 =app-emulation/proton-ge-custom-bin-7.45
 =app-emulation/proton-ge-custom-bin-7.46
+
+# 'import from zip' vulnerability https://github.com/PolyMC/PolyMC/security/advisories/GHSA-3rfr-g9g9-7gx2
+<games-action/polymc-5.0
