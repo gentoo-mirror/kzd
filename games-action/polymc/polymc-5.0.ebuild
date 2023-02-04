@@ -15,8 +15,7 @@ if [[ ${PV} == 9999 ]]; then
 		https://github.com/PolyMC/PolyMC
 	"
 
-	# TODO: Add tomlplusplus as a system library, like quazip
-	EGIT_SUBMODULES=( '*' '-libraries/quazip' )
+	EGIT_SUBMODULES=( 'depends/libnbtplusplus' )
 else
 	MY_PN="PolyMC"
 
@@ -34,48 +33,36 @@ fi
 # Apache-2.0 for MultiMC (PolyMC is forked from it)
 # GPL-3 for PolyMC
 # LGPL-3+ for libnbtplusplus
-# MIT for tomlplusplus
 # See the rest of PolyMC's libraries at https://github.com/PolyMC/PolyMC/tree/develop/libraries
 LICENSE="Apache-2.0 BSD BSD-2 GPL-2+ GPL-3 ISC LGPL-2.1+ LGPL-3+ MIT"
 
 SLOT="0"
 
-IUSE="debug lto qt6 test"
+IUSE="debug lto test"
 REQUIRED_USE="
 	lto? ( !debug )
 "
 
 RESTRICT="!test? ( test )"
 
-MIN_QT_5_VERSION="5.12.0"
-MIN_QT_6_VERSION="6.0.0"
+MIN_QT="5.12.0"
+QT_SLOT=5
 
 QT_DEPS="
-	!qt6? (
-		>=dev-qt/qtconcurrent-${MIN_QT_5_VERSION}:5
-		>=dev-qt/qtcore-${MIN_QT_5_VERSION}:5
-		>=dev-qt/qtgui-${MIN_QT_5_VERSION}:5
-		>=dev-qt/qtnetwork-${MIN_QT_5_VERSION}:5
-		>=dev-qt/qttest-${MIN_QT_5_VERSION}:5
-		>=dev-qt/qtwidgets-${MIN_QT_5_VERSION}:5
-		>=dev-qt/qtxml-${MIN_QT_5_VERSION}:5
-		>=dev-qt/qtcharts-${MIN_QT_5_VERSION}:5}
-	)
-
-	qt6? (
-		>=dev-qt/qtbase-${MIN_QT_6_VERSION}:6[concurrent,gui,network,widgets,xml(+)]
-		>=dev-qt/qt5compat-${MIN_QT_6_VERSION}:6
-		>=dev-qt/qtcharts-${MIN_QT_6_VERSION}:6
-	)
+	>=dev-qt/qtconcurrent-${MIN_QT}:${QT_SLOT}
+	>=dev-qt/qtcore-${MIN_QT}:${QT_SLOT}
+	>=dev-qt/qtgui-${MIN_QT}:${QT_SLOT}
+	>=dev-qt/qtnetwork-${MIN_QT}:${QT_SLOT}
+	>=dev-qt/qttest-${MIN_QT}:${QT_SLOT}
+	>=dev-qt/qtwidgets-${MIN_QT}:${QT_SLOT}
+	>=dev-qt/qtxml-${MIN_QT}:${QT_SLOT}
+	>=dev-qt/qtcharts-${MIN_QT}:${QT_SLOT}
 "
 
 # Required at both build-time and run-time
 COMMON_DEPENDS="
 	${QT_DEPS}
-
-	!qt6? ( >=dev-libs/quazip-1.3:=[qt5(+)] )
-	qt6? ( >=dev-libs/quazip-1.3:=[qt6(-)] )
-
+	>=dev-libs/quazip-1.3:=[qt5(+)]
 	sys-libs/zlib
 "
 
@@ -95,8 +82,7 @@ DEPEND="
 RDEPEND="
 	${COMMON_DEPENDS}
 
-	!qt6? ( >=dev-qt/qtsvg-${MIN_QT_5_VERSION}:5 )
-	 qt6? ( >=dev-qt/qtsvg-${MIN_QT_6_VERSION}:6 )
+	>=dev-qt/qtsvg-${MIN_QT}:${QT_SLOT}
 
 	>=virtual/jre-1.8.0:*
 	virtual/opengl
@@ -119,7 +105,8 @@ src_configure(){
 		-DCMAKE_INSTALL_PREFIX="/usr"
 		# Resulting binary is named polymc
 		-DLauncher_APP_BINARY_NAME="${PN}"
-		-DLauncher_QT_VERSION_MAJOR=$(usex qt6 6 5)
+		# Force Qt5 to avoid accidentaly building the Qt6 version and breaking things
+		-DLauncher_QT_VERSION_MAJOR=${QT_SLOT}
 
 		-DENABLE_LTO=$(usex lto)
 		-DBUILD_TESTING=$(usex test)
