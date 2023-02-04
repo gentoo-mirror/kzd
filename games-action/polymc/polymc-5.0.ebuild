@@ -56,6 +56,7 @@ QT_DEPS="
 	>=dev-qt/qttest-${MIN_QT}:${QT_SLOT}
 	>=dev-qt/qtwidgets-${MIN_QT}:${QT_SLOT}
 	>=dev-qt/qtxml-${MIN_QT}:${QT_SLOT}
+	>=dev-qt/qtcharts-${MIN_QT}:${QT_SLOT}
 "
 
 # Required at both build-time and run-time

@@ -59,11 +59,13 @@ QT_DEPS="
 		>=dev-qt/qttest-${MIN_QT_5_VERSION}:5
 		>=dev-qt/qtwidgets-${MIN_QT_5_VERSION}:5
 		>=dev-qt/qtxml-${MIN_QT_5_VERSION}:5
+		>=dev-qt/qtcharts-${MIN_QT_5_VERSION}:5}
 	)
 
 	qt6? (
 		>=dev-qt/qtbase-${MIN_QT_6_VERSION}:6[concurrent,gui,network,widgets,xml(+)]
 		>=dev-qt/qt5compat-${MIN_QT_6_VERSION}:6
+		>=dev-qt/qtcharts-${MIN_QT_6_VERSION}:6
 	)
 "
 
@@ -72,7 +74,7 @@ COMMON_DEPENDS="
 	${QT_DEPS}
 
 	!qt6? ( >=dev-libs/quazip-1.3:=[qt5(+)] )
-	 qt6? ( >=dev-libs/quazip-1.3:=[qt6(-)] )
+	qt6? ( >=dev-libs/quazip-1.3:=[qt6(-)] )
 
 	sys-libs/zlib
 "
