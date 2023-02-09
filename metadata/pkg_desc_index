@@ -10,7 +10,7 @@ games-action/polymc 1.4.2-r2 1.4.3 5.0 9999: A custom, open source Minecraft lau
 games-puzzle/vvvvvv 9999: Retro-styled 2D puzzle platformer (source-available release)
 gui-wm/gamescope 9999: Gamescope
 mail-client/thunderbird 102.4.2-r1: Thunderbird Mail Client
-media-libs/mesa 22.3.4: OpenGL-like graphic library for Linux
+media-libs/mesa 22.3.4 22.3.5: OpenGL-like graphic library for Linux
 media-libs/openxr-loader 1.0.26: OpenXR loader
 media-sound/NoiseTorch 0.12.2: Real-time microphone noise suppression on Linux.
 media-video/obs-studio 29.0.0: Software for Recording and Streaming Live Video Content
