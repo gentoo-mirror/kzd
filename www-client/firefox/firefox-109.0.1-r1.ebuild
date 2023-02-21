@@ -1,13 +1,13 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-FIREFOX_PATCHSET="firefox-106-patches-03j.tar.xz"
+FIREFOX_PATCHSET="firefox-109-patches-03j.tar.xz"
 
 LLVM_MAX_SLOT=15
 
-PYTHON_COMPAT=( python3_{8..11} )
+PYTHON_COMPAT=( python3_{9..11} )
 PYTHON_REQ_USE="ncurses,sqlite,ssl"
 
 WANT_AUTOCONF="2.1"
@@ -65,17 +65,17 @@ LICENSE="MPL-2.0 GPL-2 LGPL-2.1"
 IUSE="+clang cpu_flags_arm_neon dbus debug eme-free hardened hwaccel"
 IUSE+=" jack libproxy lto +openh264 pgo pulseaudio sndio selinux"
 IUSE+=" +system-av1 +system-harfbuzz +system-icu +system-jpeg +system-libevent +system-libvpx system-png system-python-libs +system-webp"
-IUSE+=" wayland wifi"
+IUSE+=" wayland wifi +X"
 
 # Firefox-only IUSE
-IUSE+=" geckodriver +gmp-autoupdate screencast +X"
+IUSE+=" geckodriver +gmp-autoupdate screencast"
 
-REQUIRED_USE="debug? ( !system-av1 )
+REQUIRED_USE="|| ( X wayland )
+	debug? ( !system-av1 )
 	pgo? ( lto )
 	wifi? ( dbus )"
 
 # Firefox-only REQUIRED_USE flags
-REQUIRED_USE+=" || ( X wayland )"
 REQUIRED_USE+=" screencast? ( wayland )"
 
 FF_ONLY_DEPEND="!www-client/firefox:0
@@ -83,34 +83,44 @@ FF_ONLY_DEPEND="!www-client/firefox:0
 	screencast? ( media-video/pipewire:= )
 	selinux? ( sec-policy/selinux-mozilla )"
 BDEPEND="${PYTHON_DEPS}
-	app-arch/unzip
-	app-arch/zip
-	>=dev-util/cbindgen-0.24.3
-	net-libs/nodejs
-	virtual/pkgconfig
-	>=virtual/rust-1.61.0
 	|| (
 		(
 			sys-devel/clang:15
 			sys-devel/llvm:15
 			clang? (
-				sys-devel/lld:15
+				|| (
+					sys-devel/lld:15
+					sys-devel/mold
+				)
+				virtual/rust:0/llvm-15
 				pgo? ( =sys-libs/compiler-rt-sanitizers-15*[profile] )
 			)
 		)
 		(
-			sys-devel/clang:13
-			sys-devel/llvm:13
+			sys-devel/clang:14
+			sys-devel/llvm:14
 			clang? (
-				sys-devel/lld:13
-				pgo? ( =sys-libs/compiler-rt-sanitizers-13*[profile] )
+				|| (
+					sys-devel/lld:14
+					sys-devel/mold
+				)
+				virtual/rust:0/llvm-14
+				pgo? ( =sys-libs/compiler-rt-sanitizers-14*[profile] )
 			)
 		)
 	)
+	app-alternatives/awk
+	app-arch/unzip
+	app-arch/zip
+	>=dev-util/cbindgen-0.24.3
+	net-libs/nodejs
+	virtual/pkgconfig
+	!clang? ( virtual/rust )
 	amd64? ( >=dev-lang/nasm-2.14 )
 	x86? ( >=dev-lang/nasm-2.14 )
 	pgo? (
 		X? (
+			sys-devel/gettext
 			x11-base/xorg-server[xvfb]
 			x11-apps/xhost
 		)
@@ -120,14 +130,11 @@ BDEPEND="${PYTHON_DEPS}
 		)
 	)"
 COMMON_DEPEND="${FF_ONLY_DEPEND}
-	|| (
-		>=app-accessibility/at-spi2-core-2.46.0:2
-		dev-libs/atk
-	)
+	>=app-accessibility/at-spi2-core-2.46.0:2
 	dev-libs/expat
 	dev-libs/glib:2
 	dev-libs/libffi:=
-	>=dev-libs/nss-3.83
+	>=dev-libs/nss-3.86
 	>=dev-libs/nspr-4.35
 	media-libs/alsa-lib
 	media-libs/fontconfig
@@ -145,6 +152,12 @@ COMMON_DEPEND="${FF_ONLY_DEPEND}
 		sys-apps/dbus
 	)
 	jack? ( virtual/jack )
+	pulseaudio? (
+		|| (
+			media-libs/libpulse
+			>=media-sound/apulse-0.1.12-r4[sdk]
+		)
+	)
 	libproxy? ( net-libs/libproxy )
 	selinux? ( sec-policy/selinux-mozilla )
 	sndio? ( >=media-sound/sndio-1.8.0-r1 )
@@ -159,7 +172,7 @@ COMMON_DEPEND="${FF_ONLY_DEPEND}
 	)
 	system-icu? ( >=dev-libs/icu-71.1:= )
 	system-jpeg? ( >=media-libs/libjpeg-turbo-1.2.1 )
-	system-libevent? ( >=dev-libs/libevent-2.1.12:0=[threads] )
+	system-libevent? ( >=dev-libs/libevent-2.1.12:0=[threads(+)] )
 	system-libvpx? ( >=media-libs/libvpx-1.8.2:0=[postproc] )
 	system-png? ( >=media-libs/libpng-1.6.35:0=[apng] )
 	system-webp? ( >=media-libs/libwebp-1.1.0:0= )
@@ -192,21 +205,10 @@ COMMON_DEPEND="${FF_ONLY_DEPEND}
 	)"
 RDEPEND="${COMMON_DEPEND}
 	jack? ( virtual/jack )
-	openh264? ( media-libs/openh264:*[plugin] )
-	pulseaudio? (
-		|| (
-			media-sound/pulseaudio
-			>=media-sound/apulse-0.1.12-r4
-		)
-	)"
+	openh264? ( media-libs/openh264:*[plugin] )"
 DEPEND="${COMMON_DEPEND}
-	pulseaudio? (
-		|| (
-			media-sound/pulseaudio
-			>=media-sound/apulse-0.1.12-r4[sdk]
-		)
-	)
 	X? (
+		x11-base/xorg-proto
 		x11-libs/libICE
 		x11-libs/libSM
 	)"
@@ -225,15 +227,20 @@ llvm_check_deps() {
 		return 1
 	fi
 
-	if use clang ; then
+	if use clang && tc-ld-is-lld ; then
 		if ! has_version -b "sys-devel/lld:${LLVM_SLOT}" ; then
 			einfo "sys-devel/lld:${LLVM_SLOT} is missing! Cannot use LLVM slot ${LLVM_SLOT} ..." >&2
 			return 1
 		fi
 
+		if ! has_version -b "virtual/rust:0/llvm-${LLVM_SLOT}" ; then
+			einfo "virtual/rust:0/llvm-${LLVM_SLOT} is missing! Cannot use LLVM slot ${LLVM_SLOT} ..." >&2
+			return 1
+		fi
+
 		if use pgo ; then
-			if ! has_version -b "=sys-libs/compiler-rt-sanitizers-${LLVM_SLOT}*" ; then
-				einfo "=sys-libs/compiler-rt-sanitizers-${LLVM_SLOT}* is missing! Cannot use LLVM slot ${LLVM_SLOT} ..." >&2
+			if ! has_version -b "=sys-libs/compiler-rt-sanitizers-${LLVM_SLOT}*[profile]" ; then
+				einfo "=sys-libs/compiler-rt-sanitizers-${LLVM_SLOT}*[profile] is missing! Cannot use LLVM slot ${LLVM_SLOT} ..." >&2
 				return 1
 			fi
 		fi
@@ -420,6 +427,40 @@ mozconfig_use_with() {
 	mozconfig_add_options_ac "$(use ${1} && echo +${1} || echo -${1})" "${flag}"
 }
 
+# This is a straight copypaste from toolchain-funcs.eclass's 'tc-ld-is-lld', and is temporarily
+# placed here until toolchain-funcs.eclass gets an official support for mold linker.
+# Please see:
+# https://github.com/gentoo/gentoo/pull/28366 ||
+# https://github.com/gentoo/gentoo/pull/28355
+tc-ld-is-mold() {
+	local out
+
+	# Ensure ld output is in English.
+	local -x LC_ALL=C
+
+	# First check the linker directly.
+	out=$($(tc-getLD "$@") --version 2>&1)
+	if [[ ${out} == *"mold"* ]] ; then
+		return 0
+	fi
+
+	# Then see if they're selecting mold via compiler flags.
+	# Note: We're assuming they're using LDFLAGS to hold the
+	# options and not CFLAGS/CXXFLAGS.
+	local base="${T}/test-tc-linker"
+	cat <<-EOF > "${base}.c"
+	int main() { return 0; }
+	EOF
+	out=$($(tc-getCC "$@") ${CFLAGS} ${CPPFLAGS} ${LDFLAGS} -Wl,--version "${base}.c" -o "${base}" 2>&1)
+	rm -f "${base}"*
+	if [[ ${out} == *"mold"* ]] ; then
+		return 0
+	fi
+
+	# No mold here!
+	return 1
+}
+
 virtwl() {
 	debug-print-function ${FUNCNAME} "$@"
 
@@ -479,7 +520,7 @@ pkg_setup() {
 
 		llvm_pkg_setup
 
-		if use clang && use lto ; then
+		if use clang && use lto && tc-ld-is-lld ; then
 			local version_lld=$(ld.lld --version 2>/dev/null | awk '{ print $2 }')
 			[[ -n ${version_lld} ]] && version_lld=$(ver_cut 1 "${version_lld}")
 			[[ -z ${version_lld} ]] && die "Failed to read ld.lld version!"
@@ -605,6 +646,7 @@ src_unpack() {
 src_prepare() {
 	use lto && rm -v "${WORKDIR}"/firefox-patches/*-LTO-Only-enable-LTO-*.patch
 	! use ppc64 && rm -v "${WORKDIR}"/firefox-patches/*bmo-1775202-ppc64*.patch
+
 	eapply "${WORKDIR}/firefox-patches"
 
 	# Allow user to apply any additional patches without modifing ebuild
@@ -638,9 +680,6 @@ src_prepare() {
 
 	einfo "Removing pre-built binaries ..."
 	find "${S}"/third_party -type f \( -name '*.so' -o -name '*.o' \) -print -delete || die
-
-	# Clearing checksums where we have applied patches
-	moz_clear_vendor_checksums bindgen
 
 	# Create build dir
 	BUILD_DIR="${WORKDIR}/${PN}_build"
@@ -717,6 +756,7 @@ src_configure() {
 
 	# Initialize MOZCONFIG
 	mozconfig_add_options_ac '' --enable-application=browser
+	mozconfig_add_options_ac '' --enable-project=browser
 
 	# Set Gentoo defaults
 	export MOZILLA_OFFICIAL=1
@@ -729,6 +769,7 @@ src_configure() {
 		--disable-install-strip \
 		--disable-parental-controls \
 		--disable-strip \
+		--disable-tests \
 		--disable-updater \
 		--enable-negotiateauth \
 		--enable-new-pass-manager \
@@ -849,13 +890,18 @@ src_configure() {
 
 	if use lto ; then
 		if use clang ; then
-			# Upstream only supports lld when using clang
-			mozconfig_add_options_ac "forcing ld=lld due to USE=clang and USE=lto" --enable-linker=lld
+			# Upstream only supports lld or mold when using clang.
+			if tc-ld-is-mold ; then
+				mozconfig_add_options_ac "using ld=mold due to system selection" --enable-linker=mold
+			else
+				mozconfig_add_options_ac "forcing ld=lld due to USE=clang and USE=lto" --enable-linker=lld
+			fi
 
 			mozconfig_add_options_ac '+lto' --enable-lto=cross
 
 		else
-			# ThinLTO is currently broken, see bmo#1644409
+			# ThinLTO is currently broken, see bmo#1644409.
+			# mold does not support gcc+lto combination.
 			mozconfig_add_options_ac '+lto' --enable-lto=full
 			mozconfig_add_options_ac "linker is set to bfd" --enable-linker=bfd
 		fi
@@ -871,10 +917,19 @@ src_configure() {
 	else
 		# Avoid auto-magic on linker
 		if use clang ; then
-			# This is upstream's default
-			mozconfig_add_options_ac "forcing ld=lld due to USE=clang" --enable-linker=lld
+			# lld is upstream's default
+			if tc-ld-is-mold ; then
+				mozconfig_add_options_ac "using ld=mold due to system selection" --enable-linker=mold
+			else
+				mozconfig_add_options_ac "forcing ld=lld due to USE=clang" --enable-linker=lld
+			fi
+
 		else
-			mozconfig_add_options_ac "linker is set to bfd" --enable-linker=bfd
+			if tc-ld-is-mold ; then
+				mozconfig_add_options_ac "using ld=mold due to system selection" --enable-linker=mold
+			else
+				mozconfig_add_options_ac "linker is set to bfd due to USE=-clang" --enable-linker=bfd
+			fi
 		fi
 	fi
 
@@ -884,7 +939,10 @@ src_configure() {
 	mozconfig_use_enable debug
 	if use debug ; then
 		mozconfig_add_options_ac '+debug' --disable-optimize
+		mozconfig_add_options_ac '+debug' --enable-real-time-tracing
 	else
+		mozconfig_add_options_ac 'Gentoo defaults' --disable-real-time-tracing
+
 		if is-flag '-g*' ; then
 			if use clang ; then
 				mozconfig_add_options_ac 'from CFLAGS' --enable-debug-symbols=$(get-flag '-g*')
@@ -992,7 +1050,7 @@ src_configure() {
 	export MOZ_MAKE_FLAGS="${MAKEOPTS}"
 
 	# Use system's Python environment
-	PIP_NETWORK_INSTALL_RESTRICTED_VIRTUALENVS=mach
+	export PIP_NETWORK_INSTALL_RESTRICTED_VIRTUALENVS=mach
 
 	if use system-python-libs; then
 		export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE="system"
