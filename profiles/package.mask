@@ -27,3 +27,6 @@
 # seems to break power1_cap that was working on prior kernels for RDNA3
 #=sys-kernel/zen-sources-6.1.11_p1
 #=sys-kernel/zen-sources-6.1.12_p1
+
+# received a revision upstream
+=sys-kernel/zen-sources-6.2.2_p1
