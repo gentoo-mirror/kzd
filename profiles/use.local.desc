@@ -5,6 +5,7 @@
 app-emulation/wine-mono:shared - Install pre-unpacked files which do not need to be copied into the Wine prefix
 games-action/polymc:lto - Enable link-time optimization
 games-action/polymc:qt6 - Build with Qt6 support instead of the default Qt5
+gnome-base/gconf:ldap - Build backend which enables default mail accounts, addressbooks and calendars for Evolution to be configured using each user's LDAP entry."
 media-gfx/blender:alembic - Add support for Alembic through media-gfx/alembic.
 media-gfx/blender:bullet - Enable Bullet (Physics Engine).
 media-gfx/blender:collada - Add support for Collada interchange format through media-libs/opencollada.
