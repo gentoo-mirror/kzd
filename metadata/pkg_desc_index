@@ -10,6 +10,7 @@ games-puzzle/vvvvvv 9999: Retro-styled 2D puzzle platformer (source-available re
 gnome-base/gconf 3.2.6-r6: GNOME configuration system and daemon
 gui-wm/gamescope 9999: Gamescope
 mail-client/thunderbird 102.4.2-r1: Thunderbird Mail Client
+media-gfx/blender 3.5.0: 3D Creation/Animation/Publishing System
 media-libs/mesa 22.3.4 23.0.0_rc5: OpenGL-like graphic library for Linux
 media-libs/openxr-loader 1.0.26: OpenXR loader
 media-sound/NoiseTorch 0.12.2: Real-time microphone noise suppression on Linux.
