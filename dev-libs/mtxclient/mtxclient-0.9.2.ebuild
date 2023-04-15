@@ -22,6 +22,7 @@ RDEPEND="
 	>=dev-libs/openssl-1.1.0:=
 	dev-libs/spdlog:=
 	>=dev-cpp/coeurl-0.2.1:=[ssl]
+	dev-libs/re2
 "
 DEPEND="
 	${RDEPEND}
