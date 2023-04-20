@@ -16,4 +16,4 @@ media-video/obs-vkcapture 1.2.2 1.3.0 1.3.1 1.3.2: OBS Linux Vulkan/OpenGL game 
 net-im/nheko 0.11.0 0.11.1 0.11.2 0.11.3: Native desktop client for Matrix using Qt
 net-misc/trackma 0.8.4 0.8.5 9999: Open multi-site list manager for media tracking sites
 net-print/cnrdrvcups-sfp 5.00: Canon UFR II / LIPSLX Printer Driver for Linux (USA)
-sys-kernel/zen-sources 6.2.8_p1 6.2.9_p1 6.2.11_p1: The Zen Kernel Live Sources
+sys-kernel/zen-sources 6.2.8_p1 6.2.9_p1 6.2.11_p1 6.2.12_p1: The Zen Kernel Live Sources
