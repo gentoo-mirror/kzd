@@ -205,6 +205,11 @@ x86? (
 	usr/lib/libGLX_mesa.so.0.0.0
 )"
 
+#PATCHES=(
+#	"${FILESDIR}"/${PN}-23.0.2-wayland-crash-warnings.patch
+#	"${FILESDIR}"/${PN}-23.0.2-wayland-crash-warnings-2.patch
+#)
+
 llvm_check_deps() {
 	local flags=${MULTILIB_USEDEP}
 	if use video_cards_r600 || use video_cards_radeon || use video_cards_radeonsi
@@ -392,7 +397,7 @@ multilib_src_configure() {
 
 	if use vulkan; then
 		vulkan_enable video_cards_freedreno freedreno
-		vulkan_enable video_cards_intel intel
+		vulkan_enable video_cards_intel intel intel_hasvk
 		vulkan_enable video_cards_d3d12 microsoft-experimental
 		vulkan_enable video_cards_radeonsi amd
 		vulkan_enable video_cards_v3d broadcom
@@ -407,15 +412,6 @@ multilib_src_configure() {
 	use vulkan && vulkan_layers+="device-select"
 	use vulkan-overlay && vulkan_layers+=",overlay"
 	emesonargs+=(-Dvulkan-layers=${vulkan_layers#,})
-
-	# In LLVM 16, we've switched to building LLVM with EH/RTTI disabled
-	# to match upstream defaults.  Mesa requires being built the same way.
-	# https://bugs.gentoo.org/883955
-	if [[ ${LLVM_SLOT} -ge 16 ]]; then
-		emesonargs+=(
-			-Dcpp_rtti=false
-		)
-	fi
 
 	emesonargs+=(
 		$(meson_use test build-tests)
