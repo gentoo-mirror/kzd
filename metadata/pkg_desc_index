@@ -13,7 +13,7 @@ media-libs/gst-plugins-bad 1.22.2: Less plugins for GStreamer
 media-libs/gst-plugins-base 1.22.2: Basepack of plugins for gstreamer
 media-libs/gst-plugins-good 1.22.2: Basepack of plugins for GStreamer
 media-libs/gstreamer 1.22.2: Open source multimedia framework
-media-libs/mesa 23.1.0_rc1 23.1.0_rc2 23.1.0_rc3: OpenGL-like graphic library for Linux
+media-libs/mesa 23.1.0_rc1 23.1.0_rc2 23.1.0_rc3 23.1.0_rc4: OpenGL-like graphic library for Linux
 media-libs/openxr-loader 1.0.26: OpenXR loader
 media-plugins/gst-plugins-jack 1.22.2: plugin for gstreamer
 media-plugins/gst-plugins-meta 1.22.2: Meta ebuild to pull in gst plugins for apps
