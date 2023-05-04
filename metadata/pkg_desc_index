@@ -8,7 +8,6 @@ games-action/polymc 5.0 9999: A custom, open source Minecraft launcher
 games-puzzle/vvvvvv 9999: Retro-styled 2D puzzle platformer (source-available release)
 gnome-base/gconf 3.2.6-r6: GNOME configuration system and daemon
 gui-wm/gamescope 9999: Gamescope
-media-gfx/blender 3.5.0 3.5.1: 3D Creation/Animation/Publishing System
 media-libs/gst-plugins-bad 1.22.2: Less plugins for GStreamer
 media-libs/gst-plugins-base 1.22.2: Basepack of plugins for gstreamer
 media-libs/gst-plugins-good 1.22.2: Basepack of plugins for GStreamer
