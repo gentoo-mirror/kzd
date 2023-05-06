@@ -21,6 +21,9 @@
 =app-emulation/proton-ge-custom-bin-7.46
 =app-emulation/proton-ge-custom-bin-7.48
 
+# wine-ge builds that received hotfixes after
+=app-emulation/wine-ge-custom-bin-8.3
+
 # 'import from zip' vulnerability https://github.com/PolyMC/PolyMC/security/advisories/GHSA-3rfr-g9g9-7gx2
 <games-action/polymc-5.0
 
