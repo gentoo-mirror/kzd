@@ -5,8 +5,10 @@ app-emulation/wine-mono 7.4.1: Replacement for the .NET runtime and class librar
 dev-libs/mtxclient 0.9.2: Client API library for Matrix, built on top of libcurl
 dev-libs/openvr 1.16.8: OpenVR is an API and runtime that allows access to VR hardware from multiple vendors without requiring that applications have specific knowledge of the hardware they are targeting.
 dev-libs/rocm-device-libs 5.5.0: Radeon Open Compute Device Libraries
+dev-libs/rocm-opencl-runtime 5.5.0: Radeon Open Compute OpenCL Compatible Runtime
 dev-libs/rocr-runtime 5.5.0: Radeon Open Compute Runtime
 dev-libs/roct-thunk-interface 5.5.0: Radeon Open Compute Thunk Interface
+dev-util/rocm-cmake 5.5.0: Radeon Open Compute CMake Modules
 dev-util/rocm-smi 5.5.0: ROCm System Management Interface Library
 dev-util/rocminfo 5.5.0: ROCm Application for Reporting System Info
 games-action/polymc 5.0 9999: A custom, open source Minecraft launcher
