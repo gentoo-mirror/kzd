@@ -3,6 +3,8 @@
 # * generated automatically using pmaint *
 
 app-emulation/wine-mono:shared - Install pre-unpacked files which do not need to be copied into the Wine prefix
+dev-lang/mono:pax-kernel - Enable if the user plans to run the package under a pax enabled hardened kernel
+dev-lang/mono:xen - Make mono generate code that is considerably faster on xen VMs but slightly slower on for normal systems.
 games-action/polymc:lto - Enable link-time optimization
 games-action/polymc:qt6 - Build with Qt6 support instead of the default Qt5
 gnome-base/gconf:ldap - Build backend which enables default mail accounts, addressbooks and calendars for Evolution to be configured using each user's LDAP entry."
