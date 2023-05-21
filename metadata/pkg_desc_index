@@ -30,4 +30,4 @@ net-im/nheko 0.11.0 0.11.1 0.11.2 0.11.3: Native desktop client for Matrix using
 net-misc/trackma 0.8.4 0.8.5 9999: Open multi-site list manager for media tracking sites
 net-print/cnrdrvcups-sfp 5.00: Canon UFR II / LIPSLX Printer Driver for Linux (USA)
 net-vpn/openfortivpn 1.20.3: Fortinet compatible VPN client
-sys-kernel/zen-sources 6.2.11_p1 6.2.12_p1 6.2.13_p1 6.3_p1 6.3.1_p2 6.3.2_p1: The Zen Kernel Live Sources
+sys-kernel/zen-sources 6.2.11_p1 6.2.12_p1 6.2.13_p1 6.3_p1 6.3.1_p2 6.3.2_p1 6.3.3_p1: The Zen Kernel Live Sources
