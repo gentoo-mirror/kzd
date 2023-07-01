@@ -1,25 +1,25 @@
 # proton-ge builds that received hotfixes after
-=app-emulation/proton-ge-custom-bin-7.1
-=app-emulation/proton-ge-custom-bin-7.2
-=app-emulation/proton-ge-custom-bin-7.3
-=app-emulation/proton-ge-custom-bin-7.6
-=app-emulation/proton-ge-custom-bin-7.7
-=app-emulation/proton-ge-custom-bin-7.11
-=app-emulation/proton-ge-custom-bin-7.12
-=app-emulation/proton-ge-custom-bin-7.13
-=app-emulation/proton-ge-custom-bin-7.16
-=app-emulation/proton-ge-custom-bin-7.17
-=app-emulation/proton-ge-custom-bin-7.19
-=app-emulation/proton-ge-custom-bin-7.21
-=app-emulation/proton-ge-custom-bin-7.22
-=app-emulation/proton-ge-custom-bin-7.23
-=app-emulation/proton-ge-custom-bin-7.34
-=app-emulation/proton-ge-custom-bin-7.36
-=app-emulation/proton-ge-custom-bin-7.39
-=app-emulation/proton-ge-custom-bin-7.40
-=app-emulation/proton-ge-custom-bin-7.45
-=app-emulation/proton-ge-custom-bin-7.46
-=app-emulation/proton-ge-custom-bin-7.48
+=app-emulation/proton-ge-custom-bin-7.1-r1
+=app-emulation/proton-ge-custom-bin-7.2-r1
+=app-emulation/proton-ge-custom-bin-7.3-r1
+=app-emulation/proton-ge-custom-bin-7.6-r1
+=app-emulation/proton-ge-custom-bin-7.7-r1
+=app-emulation/proton-ge-custom-bin-7.11-r1
+=app-emulation/proton-ge-custom-bin-7.12-r1
+=app-emulation/proton-ge-custom-bin-7.13-r1
+=app-emulation/proton-ge-custom-bin-7.16-r1
+=app-emulation/proton-ge-custom-bin-7.17-r1
+=app-emulation/proton-ge-custom-bin-7.19-r1
+=app-emulation/proton-ge-custom-bin-7.21-r1
+=app-emulation/proton-ge-custom-bin-7.22-r1
+=app-emulation/proton-ge-custom-bin-7.23-r1
+=app-emulation/proton-ge-custom-bin-7.34-r1
+=app-emulation/proton-ge-custom-bin-7.36-r1
+=app-emulation/proton-ge-custom-bin-7.39-r1
+=app-emulation/proton-ge-custom-bin-7.40-r1
+=app-emulation/proton-ge-custom-bin-7.45-r1
+=app-emulation/proton-ge-custom-bin-7.46-r1
+=app-emulation/proton-ge-custom-bin-7.48-r1
 
 # wine-ge builds that received hotfixes after
 =app-emulation/wine-ge-custom-bin-8.3
