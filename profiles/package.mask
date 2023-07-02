@@ -20,6 +20,8 @@
 =app-emulation/proton-ge-custom-bin-7.45-r1
 =app-emulation/proton-ge-custom-bin-7.46-r1
 =app-emulation/proton-ge-custom-bin-7.48-r1
+=app-emulation/wine-ge-custom-bin-8.9
+=app-emulation/proton-ge-custom-bin-8.5
 
 # wine-ge builds that received hotfixes after
 =app-emulation/wine-ge-custom-bin-8.3
