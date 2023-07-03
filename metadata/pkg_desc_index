@@ -12,7 +12,7 @@ dev-libs/roct-thunk-interface 5.5.0: Radeon Open Compute Thunk Interface
 dev-util/rocm-cmake 5.5.0: Radeon Open Compute CMake Modules
 dev-util/rocm-smi 5.5.0: ROCm System Management Interface Library
 dev-util/rocminfo 5.5.0: ROCm Application for Reporting System Info
-games-action/polymc 5.0 9999: A custom, open source Minecraft launcher
+games-action/polymc 5.0 5.1 9999: A custom, open source Minecraft launcher
 games-puzzle/vvvvvv 9999: Retro-styled 2D puzzle platformer (source-available release)
 gnome-base/gconf 3.2.6-r6: GNOME configuration system and daemon
 gui-wm/gamescope 9999: Gamescope
