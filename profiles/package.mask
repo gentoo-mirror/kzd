@@ -36,3 +36,7 @@
 # received a revision upstream
 =sys-kernel/zen-sources-6.2.2_p1
 =sys-kernel/zen-sources-6.2.3_p1
+
+# running into stability issues on login with 6.4 currently, be warned
+=sys-kernel/zen-sources-6.4_p1
+=sys-kernel/zen-sources-6.4.1_p1
