@@ -1,0 +1,62 @@
+# Copyright 2020-2022 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=8
+
+DESCRIPTION="A fast, secure and easy to use VPN. Built by the makers of Firefox. "
+HOMEPAGE="https://github.com/mozilla-mobile/mozilla-vpn-client"
+SRC_URI="https://github.com/mozilla-mobile/mozilla-vpn-client/archive/refs/tags/v$PV.zip"
+
+LICENSE="MPL-2.0 MIT LGPL-2.1 LGPL-3 Apache-2.0 unicode"
+SLOT="0"
+KEYWORDS="~amd64 ~x86"
+IUSE=""
+
+# FIXME: Gentoo splits Qt into multiple packages.  qtcore may be
+# insufficient for this package.
+#
+# FIXME: Upstream requests `libpolkit-gobject-1-dev >=0.105`.  Find what
+# this means, and add a package dependency for it.
+#
+# FIXME: Upstream requests `wireguard >=1.0.20200513`.  Find what this
+# means, and add a package dependency for it.
+#
+# FIXME: upstream requests Python3 "glean_parser".  Find what this
+# means.
+#
+# FIXME: upstream requests Python3 "pyhumps".  Find what this means.
+DEPEND="sys-auth/polkit
+	x11-libs/libxcb
+	x11-libs/libXmu
+	x11-libs/libXrender
+	media-libs/tiff
+	x11-libs/libXdmcp
+	sys-apps/dbus
+	media-libs/freetype
+	x11-themes/hicolor-icon-theme
+	net-vpn/wireguard-tools
+	net-dns/openresolv
+	dev-qt/qtcore"
+# TODO NEEDS QT6
+RDEPEND="${DEPEND}"
+BDEPEND="dev-python/pyyaml
+	dev-util/cmake
+	dev-lang/go
+	sys-devel/flex
+	sys-devel/clang
+	dev-lang/rust
+	dev-python/lxml
+	dev-util/yamllint"
+# TODO missing python-glean_parser, qt6-tools
+
+# FIXME: Upstream says to `git submodule init`.  Why?  Are they bundling
+# other projects, and assuming those bundles will be checked out by the
+# submodule?  If so, what needs to be done to tell the build system to
+# use the system versions instead?
+
+src_compile() {
+    cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+    emake
+}
+
+# default src_install is probably fine 
