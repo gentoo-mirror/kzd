@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>kzd@56709.net</email>
+		<name>Kyle Dixon</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">mozilla-mobile/mozilla-vpn-client</remote-id>
+	</upstream>
+	<!-- <use>
+		<flag name="x">x</flag>
+		<flag name="y">y</flag>
+	</use> -->
+</pkgmetadata>
