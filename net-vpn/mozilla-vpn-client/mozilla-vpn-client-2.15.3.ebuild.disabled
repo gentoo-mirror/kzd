@@ -36,7 +36,7 @@ DEPEND="sys-auth/polkit
 	x11-themes/hicolor-icon-theme
 	net-vpn/wireguard-tools
 	net-dns/openresolv
-	dev-qt/qtcore"
+	dev-qt/qtbase"
 # TODO NEEDS QT6
 RDEPEND="${DEPEND}"
 BDEPEND="dev-python/pyyaml
