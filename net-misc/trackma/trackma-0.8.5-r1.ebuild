@@ -2,13 +2,13 @@
 # Distributed under the terms of the GNU General Public License v2
 # modified from ebuild available in the booboo overlay
 
-EAPI=7
+EAPI=8
 
 KEYWORDS="~amd64"
 
 PYTHON_COMPAT=( python3_{4..11} )
 
-inherit distutils-r1 eutils git-r3 desktop
+inherit distutils-r1 git-r3 desktop
 
 DESCRIPTION="Open multi-site list manager for media tracking sites"
 HOMEPAGE="https://github.com/z411/trackma"
