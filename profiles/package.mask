@@ -41,5 +41,8 @@
 =sys-kernel/zen-sources-6.2.2_p1
 =sys-kernel/zen-sources-6.2.3_p1
 
-# WARNING: 7900 XTX users on X11 with a rotating display (ie: xrandr --output X --rotate left) will experience a hard crash/freeze/lockup on kernels 6.4.X and 6.5.X based on my experience! I am also experiencing hard PC resets/CPU instability with the AMD P-State scheduler changes defaulted in kernels 6.5+.
+# doesn't seem to have version properly embedded
+=sys-kernel/zen-sources-6.5.4_p1
+
+# WARNING: 7900 XTX users on X11 with a rotating display (ie: xrandr --output X --rotate left) will experience a hard crash/freeze/lockup on kernels 6.4.X and 6.5.X based on my experience!
 =sys-kernel/zen-sources-6.5*
