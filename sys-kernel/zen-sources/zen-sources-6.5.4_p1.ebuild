@@ -18,7 +18,7 @@ IUSE=""
 
 DESCRIPTION="The Zen Kernel Live Sources"
 
-ZEN_URI="https://github.com/zen-kernel/zen-kernel/releases/download/v${PV%_*}-zen${PV#*p}/v${PV%_*}-zen${PV#*p}.patch.xz"
+ZEN_URI="https://github.com/zen-kernel/zen-kernel/releases/download/v${PV%_*}-zen${PV#*p}/linux-v${PV%_*}-zen${PV#*p}.patch.zst"
 SRC_URI="${KERNEL_URI} ${GENPATCHES_URI} ${ARCH_URI} ${ZEN_URI}"
 
 UNIPATCH_LIST="${DISTDIR}/v${PV%_*}-zen${PV#*p}.patch.xz"
