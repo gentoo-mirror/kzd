@@ -21,16 +21,11 @@ DESCRIPTION="The Zen Kernel Live Sources"
 ZEN_URI="https://github.com/zen-kernel/zen-kernel/releases/download/v${PV%_*}-zen${PV#*p}/linux-v${PV%_*}-zen${PV#*p}.patch.zst"
 SRC_URI="${KERNEL_URI} ${GENPATCHES_URI} ${ARCH_URI} ${ZEN_URI}"
 
-#UNIPATCH_LIST="${DISTDIR}/linux-v${PV%_*}-zen${PV#*p}.patch.zst"
 UNIPATCH_LIST="${WORKDIR}/linux-v${PV%_*}-zen${PV#*p}.patch"
 UNIPATCH_STRICTORDER="yes"
 
 K_EXTRAEINFO="For more info on zen-sources, and for how to report problems, see: \
 ${HOMEPAGE}, also go to #zen-sources on oftc"
-
-#src_unpack() {
-#	zstd -df "/var/cache/distfiles/linux-v${PV%_*}-zen${PV#*p}.patch.zst" -o "${WORKDIR}/linux-v${PV%_*}-zen${PV#*p}.patch"
-#}
 
 pkg_setup() {
 	ewarn
