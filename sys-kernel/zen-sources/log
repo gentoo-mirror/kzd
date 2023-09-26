@@ -1,0 +1,224 @@
+ * linux-6.5.tar.xz BLAKE2B SHA512 size ;-) ...                          [ ok ]
+ * genpatches-6.5-7.base.tar.xz BLAKE2B SHA512 size ;-) ...              [ ok ]
+ * genpatches-6.5-7.extras.tar.xz BLAKE2B SHA512 size ;-) ...            [ ok ]
+ * linux-v6.5.5-zen1.patch.zst BLAKE2B SHA512 size ;-) ...               [ ok ]
+ * FEATURES='assume-digests binpkg-docompress binpkg-dostrip binpkg-logs binpkg-multi-instance buildpkg-live config-protect-if-modified distlocks ebuild-locks fixlafiles ipc-sandbox merge-sync multilib-strict network-sandbox news parallel-fetch parallel-install pid-sandbox preserve-libs protect-owned qa-unresolved-soname-deps sandbox sfperms strict test unknown-features-warn unmerge-logs unmerge-orphans userfetch userpriv usersandbox usersync xattr'
+ * CFLAGS='-march=znver4 -O3 -fgraphite-identity -floop-nest-optimize -fdevirtualize-at-ltrans -fipa-pta -fno-semantic-interposition -flto=auto -fuse-linker-plugin -pipe -fuse-ld=mold -Wl,-O1 -Wl,--as-needed'
+ * CXXFLAGS='-march=znver4 -O3 -fgraphite-identity -floop-nest-optimize -fdevirtualize-at-ltrans -fipa-pta -fno-semantic-interposition -flto=auto -fuse-linker-plugin -pipe -fuse-ld=mold -Wl,-O1 -Wl,--as-needed'
+ * FFLAGS='-march=znver4 -O3 -fgraphite-identity -floop-nest-optimize -fdevirtualize-at-ltrans -fipa-pta -fno-semantic-interposition -flto=auto -fuse-linker-plugin -pipe -fuse-ld=mold -Wl,-O1 -Wl,--as-needed'
+ * FCFLAGS='-march=znver4 -O3 -fgraphite-identity -floop-nest-optimize -fdevirtualize-at-ltrans -fipa-pta -fno-semantic-interposition -flto=auto -fuse-linker-plugin -pipe -fuse-ld=mold -Wl,-O1 -Wl,--as-needed'
+ * F77FLAGS='-march=znver4 -O3 -fgraphite-identity -floop-nest-optimize -fdevirtualize-at-ltrans -fipa-pta -fno-semantic-interposition -flto=auto -fuse-linker-plugin -pipe -fuse-ld=mold -Wl,-O1 -Wl,--as-needed'
+ * LDFLAGS='-fuse-ld=mold -Wl,-O1 -Wl,--as-needed -march=znver4 -O3 -fgraphite-identity -floop-nest-optimize -fdevirtualize-at-ltrans -fipa-pta -fno-semantic-interposition -flto=auto -fuse-linker-plugin -pipe'
+ * RUSTFLAGS='-C target-cpu=native -C link-arg=-fuse-ld=mold -C opt-level=3 -C debuginfo=0 -C strip=symbols'
+ * MAKEOPTS='-j32'
+ * gcc (Gentoo 13.2.1_p20230826 p7) 13.2.1 20230826
+ * g++ (Gentoo 13.2.1_p20230826 p7) 13.2.1 20230826
+ * GNU ld (Gentoo 2.41 p2) 2.41.0
+ * Linux gentoo 6.4.12-zen1-znver4-o3-pds #1 ZEN SMP PREEMPT_DYNAMIC Wed Aug 23 21:36:02 EDT 2023 x86_64 AMD Ryzen 9 7950X3D 16-Core Processor AuthenticAMD GNU/Linux
+sys-kernel/zen-sources: 34 seconds average for 96 merges
+2022-05-03T23:34:24 >>> sys-kernel/zen-sources: 36 seconds
+2022-05-03T23:36:31 >>> sys-kernel/zen-sources: 35 seconds
+2022-05-04T18:03:37 >>> sys-kernel/zen-sources: 1 minute, 58 seconds
+2022-05-05T02:25:38 >>> sys-kernel/zen-sources: 1 minute, 19 seconds
+2022-06-09T22:24:42 >>> sys-kernel/zen-sources: 40 seconds
+2022-06-09T22:39:42 >>> sys-kernel/zen-sources: 1 minute, 14 seconds
+2022-08-24T18:21:52 >>> sys-kernel/zen-sources: 1 minute, 2 seconds
+2022-09-20T07:06:10 >>> sys-kernel/zen-sources: 41 seconds
+2022-09-20T14:02:57 >>> sys-kernel/zen-sources: 42 seconds
+2022-09-21T01:26:08 >>> sys-kernel/zen-sources: 42 seconds
+2022-09-22T04:56:00 >>> sys-kernel/zen-sources: 39 seconds
+2022-10-09T18:03:27 >>> sys-kernel/zen-sources: 33 seconds
+2022-11-26T22:08:57 >>> sys-kernel/zen-sources: 30 seconds
+2022-12-02T13:38:11 >>> sys-kernel/zen-sources: 38 seconds
+2022-12-08T10:54:14 >>> sys-kernel/zen-sources: 30 seconds
+2022-12-12T01:13:36 >>> sys-kernel/zen-sources: 28 seconds
+2022-12-21T17:29:15 >>> sys-kernel/zen-sources: 27 seconds
+2022-12-31T12:32:58 >>> sys-kernel/zen-sources: 30 seconds
+2023-01-04T14:28:56 >>> sys-kernel/zen-sources: 28 seconds
+2023-01-07T12:26:10 >>> sys-kernel/zen-sources: 37 seconds
+2023-01-12T12:09:08 >>> sys-kernel/zen-sources: 30 seconds
+2023-01-12T20:59:51 >>> sys-kernel/zen-sources: 29 seconds
+2023-01-14T14:11:55 >>> sys-kernel/zen-sources: 29 seconds
+2023-01-18T14:59:32 >>> sys-kernel/zen-sources: 28 seconds
+2023-01-24T16:18:11 >>> sys-kernel/zen-sources: 30 seconds
+2023-02-01T13:04:30 >>> sys-kernel/zen-sources: 28 seconds
+2023-02-06T12:55:55 >>> sys-kernel/zen-sources: 30 seconds
+2023-02-09T23:10:05 >>> sys-kernel/zen-sources: 31 seconds
+2023-02-14T11:32:32 >>> sys-kernel/zen-sources: 28 seconds
+2023-02-14T18:34:44 >>> sys-kernel/zen-sources: 27 seconds
+2023-02-18T16:44:45 >>> sys-kernel/zen-sources: 31 seconds
+2023-02-21T00:16:01 >>> sys-kernel/zen-sources: 27 seconds
+2023-02-26T14:57:38 >>> sys-kernel/zen-sources: 27 seconds
+2023-03-03T12:27:31 >>> sys-kernel/zen-sources: 30 seconds
+2023-03-08T00:15:32 >>> sys-kernel/zen-sources: 26 seconds
+2023-03-10T07:31:37 >>> sys-kernel/zen-sources: 29 seconds
+2023-03-10T07:32:06 >>> sys-kernel/zen-sources: 31 seconds
+2023-03-10T11:28:42 >>> sys-kernel/zen-sources: 20 seconds
+2023-03-10T20:02:18 >>> sys-kernel/zen-sources: 21 seconds
+2023-03-11T15:55:40 >>> sys-kernel/zen-sources: 21 seconds
+2023-03-13T13:02:58 >>> sys-kernel/zen-sources: 19 seconds
+2023-03-17T21:11:08 >>> sys-kernel/zen-sources: 22 seconds
+2023-03-22T22:05:04 >>> sys-kernel/zen-sources: 25 seconds
+2023-03-30T13:15:36 >>> sys-kernel/zen-sources: 39 seconds
+2023-04-13T14:42:20 >>> sys-kernel/zen-sources: 26 seconds
+2023-04-20T14:05:49 >>> sys-kernel/zen-sources: 26 seconds
+2023-04-26T19:45:04 >>> sys-kernel/zen-sources: 26 seconds
+2023-04-29T04:02:50 >>> sys-kernel/zen-sources: 25 seconds
+2023-05-01T14:56:41 >>> sys-kernel/zen-sources: 24 seconds
+2023-05-10T11:51:01 >>> sys-kernel/zen-sources: 25 seconds
+2023-05-11T14:42:34 >>> sys-kernel/zen-sources: 24 seconds
+2023-05-21T14:43:04 >>> sys-kernel/zen-sources: 25 seconds
+2023-05-24T14:42:33 >>> sys-kernel/zen-sources: 25 seconds
+2023-05-29T14:35:04 >>> sys-kernel/zen-sources: 22 seconds
+2023-05-30T10:32:49 >>> sys-kernel/zen-sources: 23 seconds
+2023-06-04T13:47:41 >>> sys-kernel/zen-sources: 27 seconds
+2023-06-05T13:20:57 >>> sys-kernel/zen-sources: 25 seconds
+2023-06-09T22:55:47 >>> sys-kernel/zen-sources: 26 seconds
+2023-06-14T17:15:41 >>> sys-kernel/zen-sources: 25 seconds
+2023-06-22T10:40:49 >>> sys-kernel/zen-sources: 37 seconds
+2023-06-27T12:36:56 >>> sys-kernel/zen-sources: 26 seconds
+2023-07-01T15:09:45 >>> sys-kernel/zen-sources: 24 seconds
+2023-07-04T11:34:20 >>> sys-kernel/zen-sources: 22 seconds
+2023-07-06T14:57:27 >>> sys-kernel/zen-sources: 28 seconds
+2023-07-07T21:14:12 >>> sys-kernel/zen-sources: 52 seconds
+2023-07-11T10:57:36 >>> sys-kernel/zen-sources: 29 seconds
+2023-07-19T15:50:23 >>> sys-kernel/zen-sources: 28 seconds
+2023-07-23T12:24:50 >>> sys-kernel/zen-sources: 29 seconds
+2023-07-24T21:51:30 >>> sys-kernel/zen-sources: 26 seconds
+2023-07-27T22:12:10 >>> sys-kernel/zen-sources: 28 seconds
+2023-08-03T10:49:31 >>> sys-kernel/zen-sources: 26 seconds
+2023-08-08T18:33:17 >>> sys-kernel/zen-sources: 28 seconds
+2023-08-11T12:02:36 >>> sys-kernel/zen-sources: 43 seconds
+2023-08-12T23:09:27 >>> sys-kernel/zen-sources: 45 seconds
+2023-08-16T22:24:04 >>> sys-kernel/zen-sources: 45 seconds
+2023-08-19T11:09:27 >>> sys-kernel/zen-sources: 48 seconds
+2023-08-23T21:31:03 >>> sys-kernel/zen-sources: 46 seconds
+2023-08-29T16:42:15 >>> sys-kernel/zen-sources: 43 seconds
+2023-09-01T20:57:04 >>> sys-kernel/zen-sources: 46 seconds
+2023-09-02T15:22:52 >>> sys-kernel/zen-sources: 43 seconds
+2023-09-06T20:52:04 >>> sys-kernel/zen-sources: 42 seconds
+2023-09-13T08:30:05 >>> sys-kernel/zen-sources: 47 seconds
+2023-09-15T00:01:26 >>> sys-kernel/zen-sources: 47 seconds
+2023-09-15T00:04:01 >>> sys-kernel/zen-sources: 39 seconds
+2023-09-20T10:53:16 >>> sys-kernel/zen-sources: 41 seconds
+2023-09-21T10:26:01 >>> sys-kernel/zen-sources: 41 seconds
+2023-09-21T21:47:39 >>> sys-kernel/zen-sources: 45 seconds
+2023-09-21T22:00:22 >>> sys-kernel/zen-sources: 41 seconds
+2023-09-21T22:07:38 >>> sys-kernel/zen-sources: 40 seconds
+2023-09-21T22:12:47 >>> sys-kernel/zen-sources: 40 seconds
+2023-09-21T22:16:51 >>> sys-kernel/zen-sources: 39 seconds
+2023-09-21T22:57:57 >>> sys-kernel/zen-sources: 43 seconds
+2023-09-23T15:48:51 >>> sys-kernel/zen-sources: 45 seconds
+2023-09-25T22:44:41 >>> sys-kernel/zen-sources: 47 seconds
+2023-09-25T22:49:27 >>> sys-kernel/zen-sources: 40 seconds
+2023-09-25T22:56:53 >>> sys-kernel/zen-sources: 40 seconds
+ * 
+ * zen-sources is *not* supported by the Gentoo Kernel Project in any way.
+ * If you need support, please contact the zen developers directly.
+ * Do *not* open bugs in Gentoo's bugzilla unless you have issues with
+ * the ebuilds. Thank you.
+ * 
+ * >>> Preparing to unpack ...
+>>> Unpacking source...
+6.5.5-zen1.patch.zst : 0 B...                                                                                    /var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/distdir/linux-v6.5.5-zen1.patch.zst: 641590 bytes 
+>>> Unpacking linux-6.5.tar.xz to /var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/work
+>>> Unpacking genpatches-6.5-7.base.tar.xz to /var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/work/patches/000001
+>>> Unpacking genpatches-6.5-7.extras.tar.xz to /var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/work/patches/000002
+ * Excluding Patch #5010_enable-additional-cpu-optimizations-for-gcc.patch ...
+ [ ok ]
+ * Excluding Patch #5010_enable-additional-cpu-optimizations-for-gcc-4.9.patch ...
+ [ ok ]
+ * Excluding Patch #5011_enable-cpu-optimizations-for-gcc8.patch ...
+ [ ok ]
+ * Excluding Patch #5012_enable-cpu-optimizations-for-gcc91.patch ...
+ [ ok ]
+ * Excluding Patch #5013_enable-cpu-optimizations-for-gcc10.patch ...
+ [ ok ]
+ * Excluding Patch #5010_enable-additional-cpu-optimizations-for-gcc.patch ...
+ [ ok ]
+ * Excluding Patch #5010_enable-additional-cpu-optimizations-for-gcc-4.9.patch ...
+ [ ok ]
+ * Excluding Patch #5011_enable-cpu-optimizations-for-gcc8.patch ...
+ [ ok ]
+ * Excluding Patch #5012_enable-cpu-optimizations-for-gcc91.patch ...
+ [ ok ]
+ * Excluding Patch #5013_enable-cpu-optimizations-for-gcc10.patch ...
+ [ ok ]
+ * Excluding Patch #5010_enable-additional-cpu-optimizations-for-gcc.patch ...
+ [ ok ]
+ * Excluding Patch #5010_enable-additional-cpu-optimizations-for-gcc-4.9.patch ...
+ [ ok ]
+ * Excluding Patch #5011_enable-cpu-optimizations-for-gcc8.patch ...
+ [ ok ]
+ * Excluding Patch #5012_enable-cpu-optimizations-for-gcc91.patch ...
+ [ ok ]
+ * Excluding Patch #5013_enable-cpu-optimizations-for-gcc10.patch ...
+ [ ok ]
+ * Applying 1000_linux-6.5.1.patch (-p1) ...
+ [ ok ]
+ * Applying 1001_linux-6.5.2.patch (-p1) ...
+ [ ok ]
+ * Applying 1002_linux-6.5.3.patch (-p1) ...
+ [ ok ]
+ * Applying 1003_linux-6.5.4.patch (-p1) ...
+ [ ok ]
+ * Applying 1004_linux-6.5.5.patch (-p1) ...
+ [ ok ]
+ * Applying 1500_XATTR_USER_PREFIX.patch (-p1) ...
+ [ ok ]
+ * Applying 1510_fs-enable-link-security-restrictions-by-default.patch (-p1) ...
+ [ ok ]
+ * Applying 1700_sparc-address-warray-bound-warnings.patch (-p1) ...
+ [ ok ]
+ * Applying 1805_mm-disable-CONFIG-PER-VMA-LOCK-by-def.patch (-p1) ...
+ [ ok ]
+ * Applying 2000_BT-Check-key-sizes-only-if-Secure-Simple-Pairing-enabled.patch (-p1) ...
+ [ ok ]
+ * Applying 2900_tmp513-Fix-build-issue-by-selecting-CONFIG_REG.patch (-p1) ...
+ [ ok ]
+ * Applying 2910_bfp-mark-get-entry-ip-as--maybe-unused.patch (-p1) ...
+ [ ok ]
+ * Applying 2920_sign-file-patch-for-libressl.patch (-p1) ...
+ [ ok ]
+ * Applying 3000_Support-printing-firmware-info.patch (-p1) ...
+ [ ok ]
+ * Applying 4567_distro-Gentoo-Kconfig.patch (-p1) ...
+ [ ok ]
+ * Applying linux-v6.5.5-zen1.patch (-p1) ...
+ [ ok ]
+>>> Source unpacked in /var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/work
+>>> Preparing source in /var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/work/linux-6.5.5_p1-zen ...
+>>> Source prepared.
+ * QA Notice: 'portageq' is not allowed in ebuild scope
+>>> Configuring source in /var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/work/linux-6.5.5_p1-zen ...
+>>> Source configured.
+>>> Compiling source in /var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/work/linux-6.5.5_p1-zen ...
+>>> Source compiled.
+>>> Test phase: sys-kernel/zen-sources-6.5.5_p1
+>>> Completed testing sys-kernel/zen-sources-6.5.5_p1
+>>> Checking linux-v6.5.5-zen1.patch.zst's mtime...
+>>> Checking genpatches-6.5-7.extras.tar.xz's mtime...
+>>> Checking genpatches-6.5-7.base.tar.xz's mtime...
+>>> Checking linux-6.5.tar.xz's mtime...
+>>> WORKDIR is up-to-date, keeping...
+>>> It appears that 'pretend' has already executed for 'zen-sources-6.5.5_p1'; skipping.
+>>> Remove '/var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/.pretended' to force pretend.
+>>> It appears that 'setup' has already executed for 'zen-sources-6.5.5_p1'; skipping.
+>>> Remove '/var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/.setuped' to force setup.
+>>> It appears that 'unpack' has already executed for 'zen-sources-6.5.5_p1'; skipping.
+>>> Remove '/var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/.unpacked' to force unpack.
+>>> It appears that 'prepare' has already executed for 'zen-sources-6.5.5_p1'; skipping.
+>>> Remove '/var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/.prepared' to force prepare.
+>>> It appears that 'configure' has already executed for 'zen-sources-6.5.5_p1'; skipping.
+>>> Remove '/var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/.configured' to force configure.
+>>> It appears that 'compile' has already executed for 'zen-sources-6.5.5_p1'; skipping.
+>>> Remove '/var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/.compiled' to force compile.
+>>> It appears that 'test' has already executed for 'zen-sources-6.5.5_p1'; skipping.
+>>> Remove '/var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/.tested' to force test.
+
+>>> Install sys-kernel/zen-sources-6.5.5_p1 into /var/tmp/portage/sys-kernel/zen-sources-6.5.5_p1/image
+ * >>> Copying sources ...
+sandbox:stop  caught signal 2 in pid 4
+
+/var/db/repos/kzd/sys-kernel/zen-sources/zen-sources-6.5.5_p1.ebuild: src_install aborted; exiting.
+

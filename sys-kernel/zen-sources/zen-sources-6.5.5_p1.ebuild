@@ -16,6 +16,9 @@ KEYWORDS="~amd64 ~arm64 ~x86"
 HOMEPAGE="https://github.com/zen-kernel"
 IUSE=""
 
+# needed since patch is now zstd compressed
+BDEPEND="app-arch/zstd"
+
 DESCRIPTION="The Zen Kernel Live Sources"
 
 ZEN_URI="https://github.com/zen-kernel/zen-kernel/releases/download/v${PV%_*}-zen${PV#*p}/linux-v${PV%_*}-zen${PV#*p}.patch.zst"
@@ -27,6 +30,12 @@ UNIPATCH_STRICTORDER="yes"
 K_EXTRAEINFO="For more info on zen-sources, and for how to report problems, see: \
 ${HOMEPAGE}, also go to #zen-sources on oftc"
 
+src_unpack() {
+	# needed because of .zst change from .xz upstream; portage kernel-2 eclass doesn't seem to handle it and neither does normal unpack
+	zstd -df "${DISTDIR}/linux-v${PV%_*}-zen${PV#*p}.patch.zst" -o "${WORKDIR}/linux-v${PV%_*}-zen${PV#*p}.patch"
+	kernel-2_src_unpack
+}
+
 pkg_setup() {
 	ewarn
 	ewarn "${PN} is *not* supported by the Gentoo Kernel Project in any way."
@@ -35,8 +44,11 @@ pkg_setup() {
 	ewarn "the ebuilds. Thank you."
 	ewarn
 	kernel-2_pkg_setup
-	# needed because of .zst change from .xz upstream; portage kernel-2 eclass doesn't seem to handle it and neither does normal unpack
-	zstd -df "/var/cache/distfiles/linux-v${PV%_*}-zen${PV#*p}.patch.zst" -o "${WORKDIR}/linux-v${PV%_*}-zen${PV#*p}.patch"
+}
+
+src_install() {
+	rm "${WORKDIR}/linux-v${PV%_*}-zen${PV#*p}.patch"
+	kernel-2_src_install
 }
 
 pkg_postrm() {
