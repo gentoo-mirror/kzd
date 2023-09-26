@@ -4,7 +4,7 @@
 EAPI="8"
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras"
-K_GENPATCHES_VER="6"
+K_GENPATCHES_VER="7"
 K_SECURITY_UNSUPPORTED="1"
 K_NOSETEXTRAVERSION="1"
 
@@ -21,7 +21,7 @@ DESCRIPTION="The Zen Kernel Live Sources"
 ZEN_URI="https://github.com/zen-kernel/zen-kernel/releases/download/v${PV%_*}-zen${PV#*p}/linux-v${PV%_*}-zen${PV#*p}.patch.zst"
 SRC_URI="${KERNEL_URI} ${GENPATCHES_URI} ${ARCH_URI} ${ZEN_URI}"
 
-UNIPATCH_LIST="${DISTDIR}/linux-v${PV%_*}-zen${PV#*p}.patch.zst"
+UNIPATCH_LIST="${WORKDIR}/linux-v${PV%_*}-zen${PV#*p}.patch"
 UNIPATCH_STRICTORDER="yes"
 
 K_EXTRAEINFO="For more info on zen-sources, and for how to report problems, see: \
@@ -35,6 +35,8 @@ pkg_setup() {
 	ewarn "the ebuilds. Thank you."
 	ewarn
 	kernel-2_pkg_setup
+	# needed because of .zst change from .xz upstream; portage kernel-2 eclass doesn't seem to handle it and neither does normal unpack
+	zstd -df "/var/cache/distfiles/linux-v${PV%_*}-zen${PV#*p}.patch.zst" -o "${WORKDIR}/linux-v${PV%_*}-zen${PV#*p}.patch"
 }
 
 pkg_postrm() {
