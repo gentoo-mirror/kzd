@@ -3,7 +3,7 @@
 
 EAPI=7
 GST_ORG_MODULE="gst-plugins-bad"
-PYTHON_COMPAT=( python3_{8,9,10,11} )
+PYTHON_COMPAT=( python3_{10..11} )
 inherit gstreamer-meson python-any-r1
 
 DESCRIPTION="Less plugins for GStreamer"
@@ -13,13 +13,16 @@ LICENSE="LGPL-2"
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~mips ~ppc ~ppc64 ~riscv ~sparc ~x86"
 
 # TODO: egl and gtk IUSE only for transition
-IUSE="X bzip2 +egl gles2 gtk +introspection +opengl +orc vnc wayland qsv" # Keep default IUSE mirrored with gst-plugins-base where relevant
+IUSE="X bzip2 +egl gles2 gtk +introspection +opengl +orc vaapi vnc wayland qsv" # Keep default IUSE mirrored with gst-plugins-base where relevant
 
 # X11 is automagic for now, upstream #709530 - only used by librfb USE=vnc plugin
 # We mirror opengl/gles2 from -base to ensure no automagic openglmixers plugin (with "opengl?" it'd still get built with USE=-opengl here)
 # FIXME	gtk? ( >=media-plugins/gst-plugins-gtk-${PV}:${SLOT}[${MULTILIB_USEDEP}] )
+# Baseline requirement for libva is 1.6, but 1.10 gets more features
 RDEPEND="
+	!media-plugins/gst-plugins-va
 	!media-plugins/gst-transcoder
+
 	>=media-libs/gstreamer-${PV}:${SLOT}[${MULTILIB_USEDEP},introspection?]
 	>=media-libs/gst-plugins-base-${PV}:${SLOT}[${MULTILIB_USEDEP},egl?,introspection?,gles2=,opengl=]
 	introspection? ( >=dev-libs/gobject-introspection-1.31.1:= )
@@ -32,9 +35,11 @@ RDEPEND="
 		>=dev-libs/wayland-protocols-1.15
 	)
 
-	orc? ( >=dev-lang/orc-0.4.17[${MULTILIB_USEDEP}] )
+	orc? ( >=dev-lang/orc-0.4.33[${MULTILIB_USEDEP}] )
 
 	qsv? ( media-libs/oneVPL[wayland?,X?,${MULTILIB_USEDEP}] )
+
+	vaapi? ( >=media-libs/libva-1.10[${MULTILIB_USEDEP}] )
 "
 
 DEPEND="${RDEPEND}"
@@ -49,8 +54,9 @@ DOCS=( AUTHORS ChangeLog NEWS README.md RELEASE )
 # FIXME: gstharness.c:889:gst_harness_new_with_padnames: assertion failed: (element != NULL)
 RESTRICT="test"
 
-# Fixes backported to 1.20.1, to be removed in 1.20.2+
 PATCHES=(
+	"${FILESDIR}"/0001-meson-Fix-libdrm-and-vaapi-configure-checks.patch
+	"${FILESDIR}"/0002-meson-Add-feature-options-for-optional-va-deps-libdr.patch
 )
 
 src_prepare() {
@@ -62,11 +68,11 @@ multilib_src_configure() {
 	GST_PLUGINS_NOAUTO="shm ipcpipeline librfb msdk hls"
 
 	local emesonargs=(
+		-Dgst-plugins-bad:vulkan=enabled
 		-Dshm=enabled
 		-Dipcpipeline=enabled
 		-Dhls=disabled
 		$(meson_feature vnc librfb)
-
 		$(meson_feature wayland)
 	)
 
@@ -79,13 +85,15 @@ multilib_src_configure() {
 		emesonargs+=( -Dmsdk=disabled )
 	fi
 
-	if use opengl || use gles2; then
-		myconf+=( -Dgl=enabled )
-	else
-		myconf+=( -Dgl=disabled )
-	fi
+	# XXX: See comment above IUSE wrt egl; this was actually typo'd with
+	# myconf for ages and nothing exploded.
+	#if use opengl || use gles2; then
+	#	emesonargs+=( -Dgl=enabled )
+	#else
+	#	emesonargs+=( -Dgl=disabled )
+	#fi
 
-	gstreamer_multilib_src_configure
+	gstreamer_multilib_src_configure "$(meson_feature vaapi va)"
 }
 
 multilib_src_test() {
