@@ -59,7 +59,7 @@ QT_DEPS="
 		>=dev-qt/qttest-${MIN_QT_5_VERSION}:5
 		>=dev-qt/qtwidgets-${MIN_QT_5_VERSION}:5
 		>=dev-qt/qtxml-${MIN_QT_5_VERSION}:5
-		>=dev-qt/qtcharts-${MIN_QT_5_VERSION}:5}
+		>=dev-qt/qtcharts-${MIN_QT_5_VERSION}:5
 	)
 
 	qt6? (
