@@ -9,7 +9,7 @@ RESHADE_COMMIT="9fdbea6892f9959fdc18095d035976c574b268b7"
 MY_PV=$(ver_rs 3 -)
 MY_PV="${MY_PV//_/-}"
 
-DESCRIPTION="Efficient micro-compositor for running games"
+DESCRIPTION="SteamOS session compositing window manager"
 HOMEPAGE="https://github.com/ValveSoftware/gamescope"
 SRC_URI="https://github.com/ValveSoftware/${PN}/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz
 	https://github.com/Joshua-Ashton/reshade/archive/${RESHADE_COMMIT}.tar.gz -> reshade-${RESHADE_COMMIT}.tar.gz"
