@@ -8,6 +8,8 @@ dev-lang/mono:xen - Make mono generate code that is considerably faster on xen V
 games-action/polymc:lto - Enable link-time optimization
 games-action/polymc:qt6 - Build with Qt6 support instead of the default Qt5
 gnome-base/gconf:ldap - Build backend which enables default mail accounts, addressbooks and calendars for Evolution to be configured using each user's LDAP entry."
+gui-wm/gamescope:pipewire - Enable screen capture via PipeWire
+gui-wm/gamescope:wsi-layer - Enable the WSI layer (required for HDR)
 media-gfx/blender:alembic - Add support for Alembic through media-gfx/alembic.
 media-gfx/blender:bullet - Enable Bullet (Physics Engine).
 media-gfx/blender:collada - Add support for Collada interchange format through media-libs/opencollada.
@@ -74,6 +76,8 @@ media-video/obs-studio:ssl - Build with TLS/SSL support for RTMPS connections.
 media-video/obs-studio:vlc - Build with VLC media source support.
 media-video/obs-studio:websocket - Build with WebSocket API support.
 net-im/abaddon:libhandy - Support for features using gui-libs/libhandy
+net-im/abaddon:qrcodegen - Support for login through QR Code feature using dev-libs/qrcodegen
+net-im/abaddon:rnnoise - Support for noise reduction using media-libs/rnnoise
 net-im/nheko:video - Enables video calls
 net-im/nheko:voip - Enables audio calls
 net-libs/ixwebsocket:ws - Build the ws utility
