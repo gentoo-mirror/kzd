@@ -15,12 +15,13 @@ games-action/polymc 5.0 5.1 9999: A custom, open source Minecraft launcher
 games-emulation/ppsspp 1.16.6: A PSP emulator written in C++
 games-puzzle/vvvvvv 9999: Retro-styled 2D puzzle platformer (source-available release)
 gnome-base/gconf 3.2.6-r6: GNOME configuration system and daemon
-gui-wm/gamescope 3.13.8 3.13.9: SteamOS session compositing window manager
+gui-wm/gamescope 3.13.8 3.13.9 3.13.10: SteamOS session compositing window manager
 mail-client/thunderbird 115.3.2-r1: Thunderbird Mail Client
 media-libs/gst-plugins-bad 1.22.3-r3: Less plugins for GStreamer
 media-libs/gst-plugins-base 1.22.2: Basepack of plugins for gstreamer
 media-libs/gst-plugins-good 1.22.2: Basepack of plugins for GStreamer
 media-libs/gstreamer 1.22.2: Open source multimedia framework
+media-libs/mesa 23.3.0: OpenGL-like graphic library for Linux
 media-libs/openxr-loader 1.0.26: OpenXR loader
 media-plugins/gst-plugins-jack 1.22.2: plugin for gstreamer
 media-plugins/gst-plugins-meta 1.22.2: Meta ebuild to pull in gst plugins for apps
