@@ -7,6 +7,7 @@ dev-lang/mono:pax-kernel - Enable if the user plans to run the package under a p
 dev-lang/mono:xen - Make mono generate code that is considerably faster on xen VMs but slightly slower on for normal systems.
 games-action/polymc:lto - Enable link-time optimization
 games-action/polymc:qt6 - Build with Qt6 support instead of the default Qt5
+games-emulation/ppsspp:discord - Enable interfacing with a locally running Discord desktop client
 gnome-base/gconf:ldap - Build backend which enables default mail accounts, addressbooks and calendars for Evolution to be configured using each user's LDAP entry."
 gui-wm/gamescope:pipewire - Enable screen capture via PipeWire
 gui-wm/gamescope:wsi-layer - Enable the WSI layer (required for HDR)
@@ -66,6 +67,37 @@ media-libs/mesa:zink - Enable the Zink OpenGL-over-Vulkan Gallium driver
 media-plugins/gst-plugins-meta:http - Enable http streaming via net-libs/libsoup
 media-plugins/gst-plugins-meta:libvisual - Enable visualization effects via media-libs/libvisual
 media-plugins/gst-plugins-meta:vpx - Enables vp8 codec support using libvpx, required to play some HTML5 videos
+media-sound/mpd:cdio - Use libcdio for ISO9660 parsing support
+media-sound/mpd:chromaprint - Enable ChromaPrint / AcoustID support
+media-sound/mpd:cue - Enable CUE sheet support
+media-sound/mpd:curl - Support for web stream listening
+media-sound/mpd:eventfd - Use the eventfd function in MPD's event loop
+media-sound/mpd:faad - Use external faad library for AAC decoding
+media-sound/mpd:fifo - Support writing audio to a FIFO
+media-sound/mpd:fluidsynth - Enables Fluidsynth MIDI software synthesis (discouraged)
+media-sound/mpd:gme - Enables support for media-libs/game-music-emu for playing various video game music formats.
+media-sound/mpd:id3tag - Support for ID3 tags
+media-sound/mpd:inotify - Use the Linux kernel inotify subsystem to notice changes to mpd music library
+media-sound/mpd:lame - Support for MP3 streaming via Icecast2
+media-sound/mpd:libmpdclient - Enable support for remote mpd databases
+media-sound/mpd:libsoxr - Enable the libsoxr resampler
+media-sound/mpd:mpg123 - Enable support for mp3 decoding over media-sound/mpg123
+media-sound/mpd:network - Enables network streaming support
+media-sound/mpd:nfs - Enable support for the Network File System
+media-sound/mpd:openmpt - OpenMPT decoder plugin
+media-sound/mpd:pipe - Support writing audio to a pipe
+media-sound/mpd:pipewire - PipeWire support
+media-sound/mpd:qobuz - Build plugin to access qobuz
+media-sound/mpd:recorder - Enables output plugin for recording radio streams
+media-sound/mpd:sid - Build with SID (Commodore 64 Audio) support
+media-sound/mpd:signalfd - Use the signalfd function in MPD's event loop
+media-sound/mpd:snapcast - Snapcast audio plugin
+media-sound/mpd:sndio - Enable support for the media-sound/sndio backend
+media-sound/mpd:soundcloud - Build plugin to access soundcloud
+media-sound/mpd:systemd - Enable support for systemd socket activation
+media-sound/mpd:twolame - Support twolame MPEG-2 encoding
+media-sound/mpd:webdav - Enable using music from a WebDAV share
+media-sound/mpd:wildmidi - Enable MIDI support via wildmidi
 media-video/obs-studio:browser - Enable browser source support via (precompiled) CEF.
 media-video/obs-studio:decklink - Build the Decklink plugin.
 media-video/obs-studio:fdk - Build with LibFDK AAC support.
