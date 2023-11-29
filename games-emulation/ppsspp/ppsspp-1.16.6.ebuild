@@ -53,6 +53,7 @@ BDEPEND="
 PATCHES=(
 	"${FILESDIR}"/${PN}-CMakeLists-flags.patch
 	"${FILESDIR}"/${PN}-disable-ccache-autodetection.patch
+	"${FILESDIR}"/${PN}-support_ffmpe6.patch
 )
 
 pkg_setup() {
