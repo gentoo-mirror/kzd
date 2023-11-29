@@ -118,6 +118,10 @@ DEPEND="${RDEPEND}
 
 BDEPEND="virtual/pkgconfig"
 
+PATCHES=(
+    "${FILESDIR}"/${PN}-0.23.14-averror_eof.patch
+)
+
 pkg_setup() {
 	if use eventfd; then
 		CONFIG_CHECK+=" ~EVENTFD"
