@@ -31,7 +31,7 @@ RDEPEND="
 	media-libs/glew:=
 	media-libs/libpng:=
 	media-libs/libsdl2[joystick]
-	media-video/ffmpeg:0/56.58.58
+	media-video/ffmpeg
 	sys-libs/zlib:=
 	virtual/opengl
 	qt5? (
