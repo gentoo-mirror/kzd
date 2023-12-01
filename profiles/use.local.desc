@@ -8,6 +8,7 @@ dev-lang/mono:xen - Make mono generate code that is considerably faster on xen V
 games-action/polymc:lto - Enable link-time optimization
 games-action/polymc:qt6 - Build with Qt6 support instead of the default Qt5
 games-emulation/ppsspp:discord - Enable interfacing with a locally running Discord desktop client
+games-util/mangohud:xnvctrl - Use XNVctrl as fall back for older Nvidia devices.
 gnome-base/gconf:ldap - Build backend which enables default mail accounts, addressbooks and calendars for Evolution to be configured using each user's LDAP entry."
 gui-wm/gamescope:pipewire - Enable screen capture via PipeWire
 gui-wm/gamescope:wsi-layer - Enable the WSI layer (required for HDR)
