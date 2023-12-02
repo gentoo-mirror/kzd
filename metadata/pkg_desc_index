@@ -16,6 +16,7 @@ games-emulation/ppsspp 1.16.6: A PSP emulator written in C++
 games-puzzle/vvvvvv 9999: Retro-styled 2D puzzle platformer (source-available release)
 games-util/mangohud 0.7.0: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
 gnome-base/gconf 3.2.6-r6: GNOME configuration system and daemon
+gui-apps/waybar 0.9.24: Highly customizable Wayland bar for Sway and Wlroots based compositors
 gui-wm/gamescope 3.13.8 3.13.13: SteamOS session compositing window manager
 media-libs/gst-plugins-bad 1.22.3-r3: Less plugins for GStreamer
 media-libs/gst-plugins-base 1.22.2: Basepack of plugins for gstreamer
