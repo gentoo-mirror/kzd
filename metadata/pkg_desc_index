@@ -14,6 +14,7 @@ dev-util/rocminfo 5.5.0: ROCm Application for Reporting System Info
 games-action/polymc 5.1 9999: A custom, open source Minecraft launcher
 games-emulation/ppsspp 1.16.6: A PSP emulator written in C++
 games-puzzle/vvvvvv 9999: Retro-styled 2D puzzle platformer (source-available release)
+games-util/gamemode 1.8: Optimise Linux system performance on demand
 games-util/mangohud 0.7.0: Vulkan and OpenGL overlay for monitoring FPS, sensors, system load and more
 gnome-base/gconf 3.2.6-r6: GNOME configuration system and daemon
 gui-apps/waybar 0.9.24: Highly customizable Wayland bar for Sway and Wlroots based compositors
