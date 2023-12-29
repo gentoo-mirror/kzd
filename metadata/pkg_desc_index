@@ -17,7 +17,7 @@ media-plugins/gst-plugins-meta 1.22.2: Meta ebuild to pull in gst plugins for ap
 media-plugins/gst-plugins-pulse 1.22.2: PulseAudio sound server plugin for GStreamer
 media-sound/NoiseTorch 0.12.2: Real-time microphone noise suppression on Linux.
 media-sound/mpd 0.23.14: The Music Player Daemon (mpd)
-media-video/obs-vkcapture 1.4.7: OBS Linux Vulkan/OpenGL game capture
+media-video/obs-vkcapture 1.4.8: OBS Linux Vulkan/OpenGL game capture
 net-im/abaddon 0.1.13: Alternative Discord client using GTK instead of Electron
 net-im/nheko 0.11.0 0.11.1 0.11.2 0.11.3: Native desktop client for Matrix using Qt
 net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
