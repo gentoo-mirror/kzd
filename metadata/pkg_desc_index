@@ -1,6 +1,7 @@
 app-emulation/proton-ge-custom-bin 7.55-r2 8.1-r2 8.2-r2 8.3-r2 8.4-r3 8.5 8.6 8.7 8.8 8.9 8.10 8.11 8.12 8.13 8.14 8.15 8.16 8.17 8.18 8.19 8.20 8.21 8.22 8.23 8.24 8.25: A fancy custom distribution of Valves Proton with various patches
 app-emulation/proton-ge-custom-meta 1: Meta package for proton-ge-custom-bin, make it easier to pull in dependencies
 app-emulation/wine-mono 7.4.1: Replacement for the .NET runtime and class libraries in Wine
+app-i18n/fcitx-anthy 5.1.2: Japanese Anthy input methods for Fcitx5
 dev-lang/mono 6.12.0.182: Mono runtime and class libraries, a C# compiler/interpreter
 dev-libs/mtxclient 0.9.2: Client API library for Matrix, built on top of libcurl
 dev-libs/openvr 1.16.8: OpenVR is an API and runtime that allows access to VR hardware from multiple vendors without requiring that applications have specific knowledge of the hardware they are targeting.
@@ -24,5 +25,5 @@ net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
 net-misc/rustdesk 1.2.3: Open source virtual / remote desktop infrastructure for everyone
 net-misc/trackma 0.8.5-r1: Open multi-site list manager for media tracking sites
 net-print/cnrdrvcups-sfp 5.00: Canon UFR II / LIPSLX Printer Driver for Linux (USA)
-sys-kernel/zen-sources 6.2.13_p1 6.3.9_p1 6.4.12_p1 6.5.9_p2 6.6_p1 6.6.1_p1 6.6.2_p1 6.6.3_p1 6.6.4_p1 6.6.5_p1 6.6.6_p1 6.6.7_p1 6.6.8_p1: The Zen Kernel Live Sources
+sys-kernel/zen-sources 6.2.13_p1 6.3.9_p1 6.4.12_p1 6.5.9_p2 6.6_p1 6.6.1_p1 6.6.2_p1 6.6.3_p1 6.6.4_p1 6.6.5_p1 6.6.6_p1 6.6.7_p1 6.6.8_p1 6.6.9_p1: The Zen Kernel Live Sources
 x11-themes/qt6gtk2 0.2: GTK+2.0 integration plugins for Qt6
