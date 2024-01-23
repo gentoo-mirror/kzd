@@ -127,3 +127,4 @@ net-im/nheko:voip - Enables audio calls
 net-libs/ixwebsocket:ws - Build the ws utility
 net-misc/rustdesk:hwaccel - enable hardware-accelerated rendering support
 net-misc/rustdesk:wayland - enable wayland support
+net-vpn/cloudflare-warp:systray - Enable systray indicator of whether WARP is active
