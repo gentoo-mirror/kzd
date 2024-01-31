@@ -9,7 +9,7 @@ dev-libs/openvr 1.16.8: OpenVR is an API and runtime that allows access to VR ha
 dev-python/FVS 0.3.4-r1: File Versioning System with hash comparison
 dev-python/icoextract 0.1.4: Extract icons from Windows PE files (.exe/.dll)
 dev-python/vkbasalt-cli 3.1.1: Command-line utility for vkBasalt
-games-action/polymc 5.1 6.0 9999: A custom, open source Minecraft launcher
+games-action/polymc 5.1 6.0 6.1 9999: A custom, open source Minecraft launcher
 games-emulation/ppsspp 1.16.6: A PSP emulator written in C++
 games-puzzle/vvvvvv 9999: Retro-styled 2D puzzle platformer (source-available release)
 games-util/gamemode 1.8: Optimise Linux system performance on demand
