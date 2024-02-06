@@ -31,5 +31,5 @@ net-misc/rustdesk 1.2.3: Open source virtual / remote desktop infrastructure for
 net-misc/trackma 0.8.5-r1: Open multi-site list manager for media tracking sites
 net-print/cnrdrvcups-sfp 5.00: Canon UFR II / LIPSLX Printer Driver for Linux (USA)
 net-vpn/cloudflare-warp 2023.10.120: Cloudflare Warp Client
-sys-kernel/zen-sources 6.2.13_p1 6.3.9_p1 6.4.12_p1 6.5.9_p2 6.6.10_p1 6.7_p3 6.7.1_p1 6.7.2_p1 6.7.3_p1: The Zen Kernel Live Sources
+sys-kernel/zen-sources 6.2.13_p1 6.3.9_p1 6.4.12_p1 6.5.9_p2 6.6.10_p1 6.7_p3 6.7.1_p1 6.7.2_p1 6.7.3_p1 6.7.4_p1: The Zen Kernel Live Sources
 x11-themes/qt6gtk2 0.2: GTK+2.0 integration plugins for Qt6
