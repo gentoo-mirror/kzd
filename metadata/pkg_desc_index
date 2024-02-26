@@ -10,7 +10,6 @@ games-action/polymc 6.1: A custom, open source Minecraft launcher
 games-puzzle/vvvvvv 9999: Retro-styled 2D puzzle platformer (source-available release)
 games-util/gamemode 1.8: Optimise Linux system performance on demand
 gnome-base/gconf 3.2.6-r6: GNOME configuration system and daemon
-gui-wm/gamescope 3.13.8: SteamOS session compositing window manager
 media-libs/openxr-loader 1.0.26: OpenXR loader
 media-libs/vkBasalt 0.3.2.10: A vulkan post processing layer for linux
 media-plugins/gst-plugins-jack 1.22.2: plugin for gstreamer
