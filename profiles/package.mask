@@ -41,9 +41,8 @@
 #=sys-kernel/zen-sources-6.1.11_p1
 #=sys-kernel/zen-sources-6.1.12_p1
 
-# received a revision upstream
-=sys-kernel/zen-sources-6.2.2_p1
-=sys-kernel/zen-sources-6.2.3_p1
+# gave me issues with 2nd monitor that uses DSC (may involve some extra DSC-related patches I have added external to this repo, ymmv)
+=sys-kernel/zen-sources-6.7.7_p1
 
 # WARNING: 7900 XTX users on X11 with a rotating display (ie: xrandr --output X --rotate left) will experience a hard crash/freeze/lockup on kernels 6.4.X and 6.5.X based on my experience!
 #=sys-kernel/zen-sources-6.5*
