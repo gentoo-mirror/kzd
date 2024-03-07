@@ -723,7 +723,7 @@ inherit cargo systemd desktop xdg
 DESCRIPTION="Open source virtual / remote desktop infrastructure for everyone"
 HOMEPAGE="https://rustdesk.com/"
 EGIT_COMMIT="650dee20bb53ee8457d9f1716452ae9acd13c2fe"
-_THIDR_PARTY_COMMIT="20ee6a80eab87a1cec585d2a4365b14be879de49"
+_THIRD_PARTY_COMMIT="20ee6a80eab87a1cec585d2a4365b14be879de49"
 _SCRITER_COMMIT="0298f1b34e9a0ff1dffb889d82c506a5da8bfb1e"
 SRC_URI="
 	https://github.com/rustdesk/rustdesk/archive/${EGIT_COMMIT}.tar.gz -> ${P}.tar.gz
