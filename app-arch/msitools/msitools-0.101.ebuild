@@ -33,7 +33,7 @@ DEPEND="${RDEPEND}
 	dev-libs/vala-common
 	gnome-extra/libgsf
 	app-arch/gcab[vala]
-	>=dev-util/gtk-doc-am-1.13
+	>=dev-build/gtk-doc-am-1.13
 	>=virtual/pkgconfig-0-r1
 "
 
