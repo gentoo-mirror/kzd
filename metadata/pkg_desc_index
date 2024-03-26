@@ -17,6 +17,7 @@ media-plugins/gst-plugins-meta 1.22.2: Meta ebuild to pull in gst plugins for ap
 media-plugins/gst-plugins-pulse 1.22.2: PulseAudio sound server plugin for GStreamer
 media-sound/NoiseTorch 0.12.2: Real-time microphone noise suppression on Linux.
 media-sound/mpd 0.23.14: The Music Player Daemon (mpd)
+net-im/vesktop 1.5.1: Vesktop gives you the performance of web Discord and the comfort of Discord Desktop
 net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
 net-misc/trackma 0.8.5-r1: Open multi-site list manager for media tracking sites
 net-print/cnrdrvcups-sfp 5.00: Canon UFR II / LIPSLX Printer Driver for Linux (USA)
