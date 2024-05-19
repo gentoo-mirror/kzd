@@ -21,5 +21,5 @@ net-im/vesktop 1.5.1 1.5.2: Vesktop gives you the performance of web Discord and
 net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
 net-misc/trackma 0.8.5-r1: Open multi-site list manager for media tracking sites
 net-print/cnrdrvcups-sfp 5.00: Canon UFR II / LIPSLX Printer Driver for Linux (USA)
-sys-kernel/zen-sources 6.2.13_p1 6.3.9_p1 6.4.12_p1 6.5.9_p2 6.6.10_p1 6.7.6_p1 6.7.9_p1 6.8_p1 6.8.1_p1 6.8.2_p2 6.8.3_p1 6.8.4_p1 6.8.5_p1 6.8.6_p1 6.8.7_p1 6.8.8_p1 6.8.9_p1 6.9_p1 6.9.1_p1: The Zen Kernel Live Sources
+sys-kernel/zen-sources 6.2.13_p1 6.3.9_p1 6.4.12_p1 6.5.9_p2 6.6.10_p1 6.7.9_p1 6.8.9_p1 6.9_p1 6.9.1_p1: The Zen Kernel Live Sources
 x11-themes/qt6gtk2 0.2: GTK+2.0 integration plugins for Qt6
