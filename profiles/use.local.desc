@@ -125,6 +125,10 @@ net-im/abaddon:rnnoise - Support for noise reduction using media-libs/rnnoise
 net-im/nheko:video - Enables video calls
 net-im/nheko:voip - Enables audio calls
 net-libs/ixwebsocket:ws - Build the ws utility
+net-misc/remmina:gvnc - Enable GVNC plugin using gtk-vnc, suitable for KVM and Vino servers
+net-misc/remmina:kwallet - Enable KDE Wallet plugin
+net-misc/remmina:spice - Support connecting to SPICE-enabled virtual machines
+net-misc/remmina:ssh - Enable support for SSH/SFTP protocol
 net-misc/rustdesk:hwaccel - enable hardware-accelerated rendering support
 net-misc/rustdesk:wayland - enable wayland support
 net-vpn/cloudflare-warp:systray - Enable systray indicator of whether WARP is active

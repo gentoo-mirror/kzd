@@ -19,6 +19,7 @@ media-sound/NoiseTorch 0.12.2: Real-time microphone noise suppression on Linux.
 media-sound/mpd 0.23.14: The Music Player Daemon (mpd)
 net-im/vesktop 1.5.1 1.5.2: Vesktop gives you the performance of web Discord and the comfort of Discord Desktop
 net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
+net-misc/remmina 1.4.35-r2: A GTK+ RDP, SPICE, VNC and SSH client
 net-misc/trackma 0.8.5-r1: Open multi-site list manager for media tracking sites
 net-print/cnrdrvcups-sfp 5.00: Canon UFR II / LIPSLX Printer Driver for Linux (USA)
 sys-kernel/zen-sources 6.2.13_p1 6.3.9_p1 6.4.12_p1 6.5.9_p2 6.6.10_p1 6.7.9_p1 6.8.9_p1 6.9_p1 6.9.1_p1: The Zen Kernel Live Sources
