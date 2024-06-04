@@ -8,7 +8,7 @@ inherit multilib-minimal
 
 # SpookySkeletons/proton-ge-rtsp/releases/tag/GE-Proton8-30-rtsp-1
 
-_internal_name=GE-Proton9-5-rtsp8
+_internal_name=GE-Proton9-5-rtsp9
 DESCRIPTION="Fork of Proton GE with rtsp and other streaming protocol patches, ie for VRChat."
 HOMEPAGE="https://github.com/SpookySkeletons/proton-ge-rtsp"
 SRC_URI="https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/${_internal_name}/${_internal_name}.tar.gz -> ${_internal_name}.tar.gz"
