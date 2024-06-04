@@ -1,5 +1,5 @@
 app-arch/msitools 0.101: Set of programs to inspect and build Windows Installer (.MSI) files
-app-emulation/proton-ge-custom-bin 7.55-r2 8.1-r2 8.2-r2 8.3-r2 8.4-r3 8.5 8.6 8.7 8.8 8.9 8.10 8.11 8.12 8.13 8.14 8.15 8.16 8.17 8.18 8.19 8.20 8.21 8.22 8.23 8.24 8.25 8.26 8.27 8.28 8.29 8.30 8.30_p1 8.30_p2 8.30_p3 8.31 8.32 9.1 9.1_p1 9.1_p4 9.1_p5 9.1_p6 9.2 9.3 9.4 9.4_p7 9.5 9.5_p8: Fork of Proton GE with rtsp and other streaming protocol patches, ie for VRChat.
+app-emulation/proton-ge-custom-bin 7.55-r2 8.1-r2 8.2-r2 8.3-r2 8.4-r3 8.5 8.6 8.7 8.8 8.9 8.10 8.11 8.12 8.13 8.14 8.15 8.16 8.17 8.18 8.19 8.20 8.21 8.22 8.23 8.24 8.25 8.26 8.27 8.28 8.29 8.30 8.30_p1 8.30_p2 8.30_p3 8.31 8.32 9.1 9.1_p1 9.1_p4 9.1_p5 9.1_p6 9.2 9.3 9.4 9.4_p7 9.5 9.5_p8 9.5_p9: Fork of Proton GE with rtsp and other streaming protocol patches, ie for VRChat.
 app-emulation/proton-ge-custom-meta 1 1-r1: Meta package for proton-ge-custom-bin, make it easier to pull in dependencies
 app-emulation/wine-mono 7.4.1: Replacement for the .NET runtime and class libraries in Wine
 dev-libs/openvr 1.16.8: OpenVR is an API and runtime that allows access to VR hardware from multiple vendors without requiring that applications have specific knowledge of the hardware they are targeting.
@@ -9,7 +9,7 @@ dev-python/vkbasalt-cli 3.1.1: Command-line utility for vkBasalt
 games-action/polymc 6.1: A custom, open source Minecraft launcher
 games-puzzle/vvvvvv 9999: Retro-styled 2D puzzle platformer (source-available release)
 games-util/gamemode 1.8: Optimise Linux system performance on demand
-gnome-base/gconf 3.2.6-r6: GNOME configuration system and daemon
+gnome-base/gconf 3.2.6-r6 3.2.6-r7: GNOME configuration system and daemon
 media-libs/openxr-loader 1.0.26: OpenXR loader
 media-libs/vkBasalt 0.3.2.10: A vulkan post processing layer for linux
 media-plugins/gst-plugins-jack 1.22.2: plugin for gstreamer
@@ -20,7 +20,7 @@ media-sound/mpd 0.23.14: The Music Player Daemon (mpd)
 net-im/vesktop 1.5.1 1.5.2: Vesktop gives you the performance of web Discord and the comfort of Discord Desktop
 net-libs/ixwebsocket 11.4.4: C++ websocket client and server library
 net-misc/remmina 1.4.35-r2: A GTK+ RDP, SPICE, VNC and SSH client
-net-misc/trackma 0.8.5-r1: Open multi-site list manager for media tracking sites
+net-misc/trackma 0.8.5-r1 0.8.5-r2: Open multi-site list manager for media tracking sites
 net-print/cnrdrvcups-sfp 5.00: Canon UFR II / LIPSLX Printer Driver for Linux (USA)
 sys-kernel/zen-sources 6.2.13_p1 6.3.9_p1 6.4.12_p1 6.5.9_p2 6.6.10_p1 6.7.9_p1 6.8.9_p1 6.9_p1 6.9.1_p1 6.9.2_p1 6.9.3_p1: The Zen Kernel Live Sources
 x11-themes/qt6gtk2 0.2: GTK+2.0 integration plugins for Qt6
