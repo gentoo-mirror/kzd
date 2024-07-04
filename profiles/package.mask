@@ -35,6 +35,9 @@
 =app-emulation/proton-ge-custom-bin-9.6
 =app-emulation/proton-ge-custom-bin-9.8
 
+# broken
+=net-im/vesktop-1.5.3
+
 # wine-ge builds that received hotfixes after
 =app-emulation/wine-ge-custom-bin-8.3
 
