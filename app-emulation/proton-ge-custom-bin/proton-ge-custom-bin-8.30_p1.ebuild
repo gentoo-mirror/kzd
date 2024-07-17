@@ -105,4 +105,5 @@ pkg_postinst() {
 	einfo "changing permission of proton executables"
 	find  "${EPREFIX}"/usr/share/steam/compatibilitytools.d/${_internal_name}/proton -exec chmod ugo+x "{}" \;
 	find  "${EPREFIX}"/usr/share/steam/compatibilitytools.d/${_internal_name}/files/bin -type f -exec chmod ugo+x "{}" \;
+	find  "${EPREFIX}"/usr/share/steam/compatibilitytools.d/${_internal_name}/protonfixes/winetricks -exec chmod ugo+x "{}" \;
 }
