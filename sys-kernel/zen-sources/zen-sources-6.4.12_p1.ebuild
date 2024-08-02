@@ -16,6 +16,8 @@ KEYWORDS="~amd64 ~arm64 ~x86"
 HOMEPAGE="https://github.com/zen-kernel"
 IUSE=""
 
+SLOT="${PV%.*_*}"
+
 DESCRIPTION="The Zen Kernel Live Sources"
 
 ZEN_URI="https://github.com/zen-kernel/zen-kernel/releases/download/v${PV%_*}-zen${PV#*p}/v${PV%_*}-zen${PV#*p}.patch.xz"

@@ -16,6 +16,8 @@ KEYWORDS="~amd64 ~arm64 ~x86"
 HOMEPAGE="https://github.com/zen-kernel"
 IUSE=""
 
+SLOT="${PV%.*_*}"
+
 # needed since patch is now zstd compressed
 BDEPEND="$(unpacker_src_uri_depends)"
 
