@@ -60,5 +60,5 @@
 # WARNING: 7900 XTX users on X11 with a rotating display (ie: xrandr --output X --rotate left) will experience a hard crash/freeze/lockup on kernels 6.4.X and 6.5.X based on my experience!
 #=sys-kernel/zen-sources-6.5*
 
-# WARNING: Entire system is seeing lock-ups on 6.10 kernels currently during high IO usage. Examples include emerge, xz, restic usage.
+# WARNING: Entire system is seeing lock-ups on 6.10 kernels currently during high IO usage. Examples include emerge, xz, restic usage. See: https://bugzilla.kernel.org/show_bug.cgi?id=219121
 =sys-kernel/zen-sources-6.10*
