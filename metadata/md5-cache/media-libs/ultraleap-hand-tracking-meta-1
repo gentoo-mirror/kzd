@@ -1,0 +1,9 @@
+DEFINED_PHASES=pretend
+DESCRIPTION=Meta package for Ultraleap Hand Tracking
+EAPI=8
+HOMEPAGE=https://docs.ultraleap.com/linux/
+KEYWORDS=~amd64
+LICENSE=metapackage
+RDEPEND=media-libs/openxr-layer-ultraleap media-libs/ultraleap-hand-tracking-service media-libs/ultraleap-hand-tracking-control-panel acct-user/leap acct-group/leap
+SLOT=0
+_md5_=78beaad5a668873ec97345397c25217f
