@@ -1,0 +1,11 @@
+#!/sbin/openrc-run
+command="env LIBTRACK_IS_SERVICE=1 /usr/bin/leapd"
+command_user="leap:leap"
+command_background=true
+pidfile="/run/ultraleap-hand-tracking-service.pid"
+name="ultraleap-hand-tracking-service"
+description="Ultraleap Hand Tracking Service"
+
+depend() {
+	need net
+}
