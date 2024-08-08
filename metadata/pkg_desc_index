@@ -1,3 +1,5 @@
+acct-group/leap 1: group for leap motion
+acct-user/leap 1: user for leap motion
 app-arch/msitools 0.101: Set of programs to inspect and build Windows Installer (.MSI) files
 app-emulation/proton-ge-custom-bin 7.55-r2 8.1-r2 8.2-r2 8.3-r2 8.4-r3 8.5 8.6 8.7 8.8 8.9 8.10 8.11 8.12 8.13 8.14 8.15 8.16 8.17 8.18 8.19 8.20 8.21 8.22 8.23 8.24 8.25 8.26 8.27 8.28 8.29 8.30 8.30_p1 8.30_p2 8.30_p3 8.31 8.32 9.1 9.1_p1 9.1_p4 9.1_p5 9.1_p6 9.2 9.3 9.4 9.4_p7 9.5 9.5_p8 9.5_p9 9.5_p10 9.6 9.7 9.8 9.9 9.10-r1 9.10_p12 9.10_p12-r1 9.11: A fancy custom distribution of Valves Proton with various patches
 app-emulation/proton-ge-custom-meta 1 1-r1: Meta package for proton-ge-custom-bin, make it easier to pull in dependencies
@@ -9,7 +11,11 @@ games-action/polymc 6.1: A custom, open source Minecraft launcher
 games-puzzle/vvvvvv 9999: Retro-styled 2D puzzle platformer (source-available release)
 games-util/gamemode 1.8: Optimise Linux system performance on demand
 gnome-base/gconf 3.2.6-r6 3.2.6-r7: GNOME configuration system and daemon
+media-libs/openxr-layer-ultraleap 1.6.5: Ultraleap OpenXR Hand Tracking API Layer. Enables Ultraleap hand-tracking on an existing OpenXR runtime
 media-libs/openxr-loader 1.0.26: OpenXR loader
+media-libs/ultraleap-hand-tracking-control-panel 3.4.1: A visualisation and settings management tool for the Ultraleap Tracking Service.
+media-libs/ultraleap-hand-tracking-meta 1: Meta package for Ultraleap Hand Tracking
+media-libs/ultraleap-hand-tracking-service 5.17.1: Ultraleap Hand Tracking service and SDK for development.
 media-libs/vkBasalt 0.3.2.10: A vulkan post processing layer for linux
 media-plugins/gst-plugins-jack 1.22.2: plugin for gstreamer
 media-plugins/gst-plugins-meta 1.22.2: Meta ebuild to pull in gst plugins for apps
