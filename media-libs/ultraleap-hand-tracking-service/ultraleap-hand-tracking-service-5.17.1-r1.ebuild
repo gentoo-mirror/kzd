@@ -66,8 +66,8 @@ src_install() {
 	insinto /usr/lib/sysusers.d
 	doins ${WORKDIR}/../files/leap.conf
 
-	insinto /usr/lib/tmpfiles.d
-	doins ${WORKDIR}/../files/leap.conf
+	#insinto /usr/lib/tmpfiles.d
+	#doins ${WORKDIR}/../files/leap.conf
 
 	insinto /etc/init.d
 	doins ${WORKDIR}/../files/ultraleap-hand-tracking-service
