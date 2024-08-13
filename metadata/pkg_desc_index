@@ -15,7 +15,7 @@ media-libs/openxr-layer-ultraleap 1.6.5: Ultraleap OpenXR Hand Tracking API Laye
 media-libs/openxr-loader 1.0.26: OpenXR loader
 media-libs/ultraleap-hand-tracking-control-panel 3.4.1: A visualisation and settings management tool for the Ultraleap Tracking Service.
 media-libs/ultraleap-hand-tracking-meta 1: Meta package for Ultraleap Hand Tracking
-media-libs/ultraleap-hand-tracking-service 5.17.1: Ultraleap Hand Tracking service and SDK for development.
+media-libs/ultraleap-hand-tracking-service 5.17.1-r1: Ultraleap Hand Tracking service and SDK for development.
 media-libs/vkBasalt 0.3.2.10: A vulkan post processing layer for linux
 media-plugins/gst-plugins-jack 1.22.2: plugin for gstreamer
 media-plugins/gst-plugins-meta 1.22.2: Meta ebuild to pull in gst plugins for apps
