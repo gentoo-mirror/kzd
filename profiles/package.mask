@@ -61,4 +61,4 @@
 #=sys-kernel/zen-sources-6.5*
 
 # WARNING: Entire system is seeing lock-ups on 6.10 kernels currently during high IO usage. Examples include emerge, xz, restic usage. See: https://bugzilla.kernel.org/show_bug.cgi?id=219121
-=sys-kernel/zen-sources-6.10*
+#=sys-kernel/zen-sources-6.10*
