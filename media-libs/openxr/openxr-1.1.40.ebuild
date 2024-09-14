@@ -1,7 +1,7 @@
 # Copyright 2020-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 MY_PN=OpenXR-SDK-Source
 EGIT_REPO_URI="https://github.com/KhronosGroup/${MY_PN}.git"
 
@@ -27,7 +27,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 IUSE="layers +wayland +X"
 
-BDEPEND=">=dev-util/cmake-3.10.2"
+BDEPEND=">=dev-build/cmake-3.10.2"
 DEPEND="
 	media-libs/vulkan-loader
 	media-libs/mesa
@@ -51,7 +51,7 @@ src_configure() {
 		-DBUILD_WITH_XLIB_HEADERS=$(usex X)
 		-DBUILD_WITH_XCB_HEADERS=$(usex X)
 		-DBUILD_WITH_WAYLAND_HEADERS=$(usex wayland)
-#		-DBUILD_API_LAYERS=$(usex layers)
+		-DBUILD_API_LAYERS=$(usex layers)
 	)
 
 	cmake_src_configure
