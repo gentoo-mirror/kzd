@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install postinst test
+DESCRIPTION=Fork of Proton GE with rtsp and other streaming protocol patches, ie for VRChat.
+EAPI=8
+HOMEPAGE=https://github.com/SpookySkeletons/proton-ge-rtsp
+INHERIT=multilib-minimal
+IUSE=abi_x86_32 abi_x86_64
+KEYWORDS=~amd64
+LICENSE=BSD LGPL zlib MIT MPL OFL Proton GPL MSPL
+RDEPEND=media-libs/mesa[vulkan,abi_x86_32(-)?,abi_x86_64(-)?] media-libs/vulkan-loader[abi_x86_32(-)?,abi_x86_64(-)?]
+REQUIRED_USE=|| ( abi_x86_32 abi_x86_64 )
+RESTRICT=mirror strip
+SLOT=rtsp
+SRC_URI=https://github.com/SpookySkeletons/proton-ge-rtsp/releases/download/GE-Proton9-20-rtsp15-1/GE-Proton9-20-rtsp15.tar.gz -> GE-Proton9-20-rtsp15.tar.gz
+_eclasses_=out-of-source-utils	dbf9e34ee8964084651e25907fa8f52c	multibuild	4650a65187015567b4e041bb9bfdb364	multilib	b2a329026f2e404e9e371097dda47f96	toolchain-funcs	d3d42b22a610ce81c267b644bcec9b87	multilib-build	9ac26ea006828266d235e2f0135429b5	multilib-minimal	e9f54d75b074edc47d36994bbc1e2123
+_md5_=82cd1019033069c429a76352067ccc0a
