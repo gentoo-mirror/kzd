@@ -119,6 +119,8 @@ media-video/obs-studio:speex - Build with Speex noise suppression filter support
 media-video/obs-studio:ssl - Build with TLS/SSL support for RTMPS connections.
 media-video/obs-studio:vlc - Build with VLC media source support.
 media-video/obs-studio:websocket - Build with WebSocket API support.
+media-video/syncplay:client - Install the Syncplay client
+media-video/syncplay:server - Install the Syncplay server
 net-im/abaddon:libhandy - Support for features using gui-libs/libhandy
 net-im/abaddon:qrcodegen - Support for login through QR Code feature using dev-libs/qrcodegen
 net-im/abaddon:rnnoise - Support for noise reduction using media-libs/rnnoise
