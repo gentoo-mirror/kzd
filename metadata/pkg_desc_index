@@ -1,7 +1,7 @@
 acct-group/leap 1: group for leap motion
 acct-user/leap 1: user for leap motion
 app-arch/msitools 0.101: Set of programs to inspect and build Windows Installer (.MSI) files
-app-emulation/proton-ge-custom-bin 7.55-r2 8.1-r2 8.2-r2 8.3-r2 8.4-r3 8.5 8.6 8.7 8.8 8.9 8.10 8.11 8.12 8.13 8.14 8.15 8.16 8.17 8.18 8.19 8.20 8.21 8.22 8.23 8.24 8.25 8.26 8.27 8.28 8.29 8.30 8.30_p1 8.30_p2 8.30_p3 8.31 8.32 9.1 9.1_p1 9.1_p4 9.1_p5 9.1_p6 9.2 9.3 9.4 9.4_p7 9.5 9.5_p8 9.5_p9 9.5_p10 9.6 9.7 9.8 9.9 9.10-r1 9.10_p12 9.10_p12-r1 9.10_p13-r1 9.10_p14-r1 9.11 9.11_p15 9.12 9.13 9.14 9.15 9.16 9.17 9.18 9.19 9.20 9.20_p15 9.20_p16 9.21 9.22: A fancy custom distribution of Valves Proton with various patches
+app-emulation/proton-ge-custom-bin 7.55-r2 8.1-r2 8.2-r2 8.3-r2 8.4-r3 8.5 8.6 8.7 8.8 8.9 8.10 8.11 8.12 8.13 8.14 8.15 8.16 8.17 8.18 8.19 8.20 8.21 8.22 8.23 8.24 8.25 8.26 8.27 8.28 8.29 8.30 8.30_p1 8.30_p2 8.30_p3 8.31 8.32 9.1 9.1_p1 9.1_p4 9.1_p5 9.1_p6 9.2 9.3 9.4 9.4_p7 9.5 9.5_p8 9.5_p9 9.5_p10 9.6 9.7 9.8 9.9 9.10-r1 9.10_p12 9.10_p12-r1 9.10_p13-r1 9.10_p14-r1 9.11 9.11_p15 9.12 9.13 9.14 9.15 9.16 9.17 9.18 9.19 9.20 9.20_p15 9.20_p16 9.21 9.22 9.22_p17: Fork of Proton GE with rtsp and other streaming protocol patches, ie for VRChat.
 app-emulation/proton-ge-custom-meta 1 1-r1: Meta package for proton-ge-custom-bin, make it easier to pull in dependencies
 app-emulation/wine-mono 7.4.1: Replacement for the .NET runtime and class libraries in Wine
 dev-python/FVS 0.3.4-r1: File Versioning System with hash comparison
