@@ -4,7 +4,7 @@
 EAPI="8"
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras"
-K_GENPATCHES_VER="7"
+K_GENPATCHES_VER="8"
 K_SECURITY_UNSUPPORTED="1"
 K_NOSETEXTRAVERSION="1"
 
@@ -27,6 +27,7 @@ ZEN_URI="https://github.com/zen-kernel/zen-kernel/releases/download/v${PV%_*}-ze
 SRC_URI="${KERNEL_URI} ${GENPATCHES_URI} ${ARCH_URI} ${ZEN_URI}"
 
 UNIPATCH_LIST="${WORKDIR}/linux-v${PV%_*}-zen${PV#*p}.patch"
+UNIPATCH_EXCLUDE="1740_x86-insn-decoder-test-allow-longer-symbol-names.patch"
 UNIPATCH_STRICTORDER="yes"
 
 K_EXTRAEINFO="For more info on zen-sources, and for how to report problems, see: \
