@@ -73,9 +73,9 @@ IDEPEND="
 "
 
 QA_PREBUILT="*"
-PATCHES=(
-	"${FILESDIR}"/${PN}-copy-firmware-r8.patch
-)
+#PATCHES=(
+#	"${FILESDIR}"/${PN}-copy-firmware-r8.patch
+#)
 
 pkg_pretend() {
 	if use initramfs; then
