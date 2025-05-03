@@ -30,5 +30,5 @@ net-misc/remmina 1.4.35-r2: A GTK+ RDP, SPICE, VNC and SSH client
 net-misc/trackma 0.8.6 0.9: Open multi-site list manager for media tracking sites
 net-print/cnrdrvcups-sfp 5.00: Canon UFR II / LIPSLX Printer Driver for Linux (USA)
 sys-kernel/linux-firmware 20241110: Linux firmware files
-sys-kernel/zen-sources 6.2.13_p1 6.3.9_p1 6.4.12_p1 6.5.9_p2 6.6.10_p1 6.7.9_p1 6.8.9_p1 6.9.10_p1 6.10.10_p1 6.11.9_p1 6.12.10_p1 6.13.8_p1 6.14_p1 6.14.1_p1 6.14.2_p1 6.14.3_p1 6.14.4_p1: The Zen Kernel Live Sources
+sys-kernel/zen-sources 6.2.13_p1 6.3.9_p1 6.4.12_p1 6.5.9_p2 6.6.10_p1 6.7.9_p1 6.8.9_p1 6.9.10_p1 6.10.10_p1 6.11.9_p1 6.12.10_p1 6.13.8_p1 6.14_p1 6.14.1_p1 6.14.2_p1 6.14.3_p1 6.14.4_p1 6.14.5_p1: The Zen Kernel Live Sources
 x11-themes/qt6gtk2 0.2 0.3: GTK+2.0 integration plugins for Qt6
