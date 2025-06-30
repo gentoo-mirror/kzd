@@ -37,6 +37,7 @@
 =app-emulation/proton-ge-custom-bin-9.17
 =app-emulation/proton-ge-custom-bin-9.19
 =app-emulation/proton-ge-custom-bin-10.5
+=app-emulation/proton-ge-custom-bin-10.6
 
 # broken
 =net-im/vesktop-1.5.3
