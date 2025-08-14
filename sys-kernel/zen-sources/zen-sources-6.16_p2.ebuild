@@ -4,7 +4,7 @@
 EAPI="8"
 ETYPE="sources"
 K_WANT_GENPATCHES="base extras"
-K_GENPATCHES_VER="3"
+K_GENPATCHES_VER="1"
 K_SECURITY_UNSUPPORTED="1"
 K_NOSETEXTRAVERSION="1"
 
@@ -16,7 +16,7 @@ KEYWORDS="~amd64 ~arm64 ~x86"
 HOMEPAGE="https://github.com/zen-kernel"
 IUSE=""
 
-SLOT="${PV%.*_*}"
+SLOT="${PV%_*}"
 
 # needed since patch is now zstd compressed
 BDEPEND="$(unpacker_src_uri_depends)"
