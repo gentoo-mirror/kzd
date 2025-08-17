@@ -27,7 +27,7 @@ ZEN_URI="https://github.com/zen-kernel/zen-kernel/releases/download/v${PV%_*}-ze
 SRC_URI="${KERNEL_URI} ${GENPATCHES_URI} ${ARCH_URI} ${ZEN_URI}"
 
 UNIPATCH_LIST="${WORKDIR}/linux-v${PV%_*}-zen${PV#*p}.patch"
-UNIPATCH_EXCLUDE="1740_x86-insn-decoder-test-allow-longer-symbol-names.patch"
+UNIPATCH_EXCLUDE="1900_btrfs_fix_log_tree_replay_failure.patch"
 UNIPATCH_STRICTORDER="yes"
 
 K_EXTRAEINFO="For more info on zen-sources, and for how to report problems, see: \
