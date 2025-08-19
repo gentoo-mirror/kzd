@@ -12,7 +12,8 @@ games-action/polymc 6.1: A custom, open source Minecraft launcher
 games-puzzle/vvvvvv 9999: Retro-styled 2D puzzle platformer (source-available release)
 games-util/gamemode 1.8: Optimise Linux system performance on demand
 gnome-base/gconf 3.2.6-r6 3.2.6-r7: GNOME configuration system and daemon
-media-libs/openxr 1.1.40 1.1.41: Sources for OpenXR loader, basic API layers, and example code.
+media-libs/openvr 2.5.1: OpenVR SDK
+media-libs/openxr 1.1.50: Sources for OpenXR loader, basic API layers, and example code.
 media-libs/openxr-layer-ultraleap 1.6.5: Ultraleap OpenXR Hand Tracking API Layer. Enables Ultraleap hand-tracking on an existing OpenXR runtime
 media-libs/openxr-loader 1.0.26: OpenXR loader
 media-libs/ultraleap-hand-tracking-control-panel 3.4.1: A visualisation and settings management tool for the Ultraleap Tracking Service.
