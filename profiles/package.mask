@@ -49,6 +49,11 @@
 # 'import from zip' vulnerability https://github.com/PolyMC/PolyMC/security/advisories/GHSA-3rfr-g9g9-7gx2
 <games-action/polymc-5.0
 
+# seems to be broken on init for me
+=sys-kernel/zen-sources-6.17.1_p1
+=sys-kernel/zen-sources-6.17.2_p1
+=sys-kernel/zen-sources-6.17.3_p1
+
 # seems to break power1_cap that was working on prior kernels for RDNA3
 #=sys-kernel/zen-sources-6.1.11_p1
 #=sys-kernel/zen-sources-6.1.12_p1
